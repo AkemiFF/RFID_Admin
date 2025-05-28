@@ -292,3 +292,215 @@ INFO 2025-05-28 16:07:43,010 basehttp 1296471 123706982516416 "GET /static/rest_
 INFO 2025-05-28 16:07:43,233 basehttp 1296471 123706982516416 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
 WARNING 2025-05-28 16:07:43,811 log 1296471 123706982516416 Not Found: /favicon.ico
 WARNING 2025-05-28 16:07:43,811 basehttp 1296471 123706982516416 "GET /favicon.ico HTTP/1.1" 404 3633
+INFO 2025-05-28 16:11:33,418 autoreload 1296471 123707335665472 /home/akemi/Projects/Mere/django-rfid-system/Back/authentication/serializers.py changed, reloading.
+INFO 2025-05-28 16:11:34,704 autoreload 1305523 135061344757568 Watching for file changes with StatReloader
+INFO 2025-05-28 16:12:00,850 autoreload 1305523 135061344757568 /home/akemi/Projects/Mere/django-rfid-system/Back/authentication/views.py changed, reloading.
+INFO 2025-05-28 16:12:01,679 autoreload 1306551 131104418715456 Watching for file changes with StatReloader
+INFO 2025-05-28 16:12:06,281 autoreload 1306551 131104418715456 /home/akemi/Projects/Mere/django-rfid-system/Back/authentication/views.py changed, reloading.
+INFO 2025-05-28 16:12:07,058 autoreload 1306758 134332097976128 Watching for file changes with StatReloader
+WARNING 2025-05-28 16:12:10,862 log 1306758 134331771123392 Method Not Allowed: /api/auth/login/
+WARNING 2025-05-28 16:12:10,863 basehttp 1306758 134331771123392 "GET /api/auth/login/ HTTP/1.1" 405 8311
+WARNING 2025-05-28 16:12:11,008 log 1306758 134331771123392 Not Found: /favicon.ico
+WARNING 2025-05-28 16:12:11,009 basehttp 1306758 134331771123392 "GET /favicon.ico HTTP/1.1" 404 3633
+WARNING 2025-05-28 16:12:22,178 views 1306758 134331771123392 Tentative de connexion échouée pour akemi@gmail.com depuis 127.0.0.1
+WARNING 2025-05-28 16:12:22,189 log 1306758 134331771123392 Bad Request: /api/auth/login/
+WARNING 2025-05-28 16:12:22,190 basehttp 1306758 134331771123392 "POST /api/auth/login/ HTTP/1.1" 400 8346
+WARNING 2025-05-28 16:14:05,210 views 1306758 134331771123392 Tentative de connexion échouée pour akemi@gmail.com depuis 127.0.0.1
+WARNING 2025-05-28 16:14:05,217 log 1306758 134331771123392 Bad Request: /api/auth/login/
+WARNING 2025-05-28 16:14:05,218 basehttp 1306758 134331771123392 "POST /api/auth/login/ HTTP/1.1" 400 8346
+INFO 2025-05-28 16:16:59,655 autoreload 1306758 134332097976128 /home/akemi/Projects/Mere/django-rfid-system/Back/authentication/serializers.py changed, reloading.
+INFO 2025-05-28 16:17:08,270 autoreload 1317575 124319581177664 Watching for file changes with StatReloader
+WARNING 2025-05-28 16:17:16,818 views 1317575 124319254443712 Tentative de connexion échouée pour akemi@gmail.com depuis 127.0.0.1
+WARNING 2025-05-28 16:17:16,980 log 1317575 124319254443712 Bad Request: /api/auth/login/
+WARNING 2025-05-28 16:17:16,980 basehttp 1317575 124319254443712 "POST /api/auth/login/ HTTP/1.1" 400 8346
+WARNING 2025-05-28 16:18:48,283 views 1317575 124319170557632 Tentative de connexion échouée pour akemi@gmail.com depuis 127.0.0.1
+WARNING 2025-05-28 16:18:48,284 log 1317575 124319170557632 Bad Request: /api/auth/login/
+WARNING 2025-05-28 16:18:48,284 basehttp 1317575 124319170557632 "POST /api/auth/login/ HTTP/1.1" 400 56
+INFO 2025-05-28 16:19:41,315 autoreload 1317575 124319581177664 /home/akemi/Projects/Mere/django-rfid-system/Back/authentication/serializers.py changed, reloading.
+INFO 2025-05-28 16:19:42,166 autoreload 1323610 123505181931328 Watching for file changes with StatReloader
+INFO 2025-05-28 16:19:48,050 autoreload 1323610 123505181931328 /home/akemi/Projects/Mere/django-rfid-system/Back/authentication/serializers.py changed, reloading.
+INFO 2025-05-28 16:19:48,972 autoreload 1323820 136712198006592 Watching for file changes with StatReloader
+WARNING 2025-05-28 16:19:53,556 views 1323820 136711872968384 Tentative de connexion échouée pour akemi@gmail.com depuis 127.0.0.1
+WARNING 2025-05-28 16:19:53,557 log 1323820 136711872968384 Bad Request: /api/auth/login/
+WARNING 2025-05-28 16:19:53,558 basehttp 1323820 136711872968384 "POST /api/auth/login/ HTTP/1.1" 400 56
+INFO 2025-05-28 16:20:13,276 autoreload 1323820 136712198006592 /home/akemi/Projects/Mere/django-rfid-system/Back/authentication/serializers.py changed, reloading.
+INFO 2025-05-28 16:20:14,252 autoreload 1324801 128289138018112 Watching for file changes with StatReloader
+WARNING 2025-05-28 16:20:17,892 views 1324801 128288811906752 Tentative de connexion échouée pour akemi@gmail.com depuis 127.0.0.1
+WARNING 2025-05-28 16:20:17,893 log 1324801 128288811906752 Bad Request: /api/auth/login/
+WARNING 2025-05-28 16:20:17,894 basehttp 1324801 128288811906752 "POST /api/auth/login/ HTTP/1.1" 400 56
+INFO 2025-05-28 16:22:15,399 autoreload 1324801 128289138018112 /home/akemi/Projects/Mere/django-rfid-system/Back/authentication/serializers.py changed, reloading.
+INFO 2025-05-28 16:22:16,428 autoreload 1329306 138842187958080 Watching for file changes with StatReloader
+WARNING 2025-05-28 16:22:22,561 views 1329306 138841862174400 Tentative de connexion échouée pour akemi@gmail.com depuis 127.0.0.1
+ERROR 2025-05-28 16:22:22,844 log 1329306 138841862174400 Internal Server Error: /api/auth/login/
+Traceback (most recent call last):
+  File "/home/akemi/anaconda3/envs/django/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akemi/anaconda3/envs/django/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akemi/anaconda3/envs/django/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akemi/anaconda3/envs/django/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akemi/anaconda3/envs/django/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akemi/anaconda3/envs/django/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/akemi/anaconda3/envs/django/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/akemi/anaconda3/envs/django/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akemi/Projects/Mere/django-rfid-system/Back/authentication/views.py", line 36, in post
+    response = super().post(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akemi/anaconda3/envs/django/lib/python3.12/site-packages/rest_framework_simplejwt/views.py", line 44, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/akemi/anaconda3/envs/django/lib/python3.12/site-packages/rest_framework/serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akemi/anaconda3/envs/django/lib/python3.12/site-packages/rest_framework/serializers.py", line 429, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/home/akemi/Projects/Mere/django-rfid-system/Back/authentication/serializers.py", line 96, in validate
+    refresh = self.get_token(user)
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/home/akemi/Projects/Mere/django-rfid-system/Back/authentication/serializers.py", line 35, in get_token
+    token['permissions'] = cls.get_user_permissions(user)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akemi/Projects/Mere/django-rfid-system/Back/authentication/serializers.py", line 43, in get_user_permissions
+    user_roles = user.userrole_set.filter(is_active=True)
+                 ^^^^^^^^^^^^^^^^^
+AttributeError: 'Utilisateur' object has no attribute 'userrole_set'. Did you mean: 'user_roles'?
+ERROR 2025-05-28 16:22:22,849 basehttp 1329306 138841862174400 "POST /api/auth/login/ HTTP/1.1" 500 130834
+INFO 2025-05-28 16:23:08,106 autoreload 1329306 138842187958080 /home/akemi/Projects/Mere/django-rfid-system/Back/authentication/serializers.py changed, reloading.
+INFO 2025-05-28 16:23:08,868 autoreload 1331255 127681141012288 Watching for file changes with StatReloader
+INFO 2025-05-28 16:25:33,076 autoreload 1331255 127681141012288 /home/akemi/Projects/Mere/django-rfid-system/Back/authentication/serializers.py changed, reloading.
+INFO 2025-05-28 16:25:33,851 autoreload 1336624 138007309539136 Watching for file changes with StatReloader
+INFO 2025-05-28 16:25:39,894 views 1336624 138006983866048 Connexion réussie pour akemi@gmail.com depuis 127.0.0.1
+INFO 2025-05-28 16:25:39,895 basehttp 1336624 138006983866048 "POST /api/auth/login/ HTTP/1.1" 200 1021
+INFO 2025-05-28 16:25:48,098 autoreload 1336624 138007309539136 /home/akemi/Projects/Mere/django-rfid-system/Back/authentication/serializers.py changed, reloading.
+INFO 2025-05-28 16:25:48,849 autoreload 1337202 134974958765888 Watching for file changes with StatReloader
+INFO 2025-05-28 16:26:19,643 basehttp 1337202 134974633146048 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+INFO 2025-05-28 16:26:20,565 views 1337202 134974633146048 Connexion réussie pour akemi@gmail.com depuis 127.0.0.1
+INFO 2025-05-28 16:26:20,566 basehttp 1337202 134974633146048 "POST /api/auth/login/ HTTP/1.1" 200 1021
+INFO 2025-05-28 16:26:30,922 views 1337202 134974633146048 Connexion réussie pour akemi@gmail.com depuis 127.0.0.1
+INFO 2025-05-28 16:26:30,923 basehttp 1337202 134974633146048 "POST /api/auth/login/ HTTP/1.1" 200 1021
+INFO 2025-05-28 16:27:26,939 views 1337202 134974633146048 Connexion réussie pour akemi@gmail.com depuis 127.0.0.1
+INFO 2025-05-28 16:27:26,942 basehttp 1337202 134974633146048 "POST /api/auth/login/ HTTP/1.1" 200 1021
+INFO 2025-05-28 16:27:30,761 views 1337202 134974633146048 Connexion réussie pour akemi@gmail.com depuis 127.0.0.1
+INFO 2025-05-28 16:27:30,762 basehttp 1337202 134974633146048 "POST /api/auth/login/ HTTP/1.1" 200 1021
+INFO 2025-05-28 16:28:14,288 views 1337202 134974633146048 Connexion réussie pour akemi@gmail.com depuis 127.0.0.1
+INFO 2025-05-28 16:28:14,289 basehttp 1337202 134974633146048 "POST /api/auth/login/ HTTP/1.1" 200 1021
+INFO 2025-05-28 16:28:25,368 views 1337202 134974633146048 Connexion réussie pour akemi@gmail.com depuis 127.0.0.1
+INFO 2025-05-28 16:28:25,369 basehttp 1337202 134974633146048 "POST /api/auth/login/ HTTP/1.1" 200 1021
+INFO 2025-05-28 16:28:47,037 views 1337202 134974633146048 Connexion réussie pour akemi@gmail.com depuis 127.0.0.1
+INFO 2025-05-28 16:28:47,038 basehttp 1337202 134974633146048 "POST /api/auth/login/ HTTP/1.1" 200 1021
+INFO 2025-05-28 16:29:11,406 views 1337202 134974633146048 Connexion réussie pour akemi@gmail.com depuis 127.0.0.1
+INFO 2025-05-28 16:29:11,407 basehttp 1337202 134974633146048 "POST /api/auth/login/ HTTP/1.1" 200 1021
+INFO 2025-05-28 16:29:40,365 views 1337202 134974633146048 Connexion réussie pour akemi@gmail.com depuis 127.0.0.1
+INFO 2025-05-28 16:29:40,366 basehttp 1337202 134974633146048 "POST /api/auth/login/ HTTP/1.1" 200 1021
+INFO 2025-05-28 16:35:14,957 views 1337202 134974633146048 Connexion réussie pour akemi@gmail.com depuis 127.0.0.1
+INFO 2025-05-28 16:35:14,973 basehttp 1337202 134974633146048 "POST /api/auth/login/ HTTP/1.1" 200 1021
+INFO 2025-05-28 16:35:49,882 views 1337202 134974633146048 Connexion réussie pour akemi@gmail.com depuis 127.0.0.1
+INFO 2025-05-28 16:35:49,883 basehttp 1337202 134974633146048 "POST /api/auth/login/ HTTP/1.1" 200 1021
+INFO 2025-05-28 16:36:35,731 views 1337202 134974633146048 Connexion réussie pour akemi@gmail.com depuis 127.0.0.1
+INFO 2025-05-28 16:36:35,732 basehttp 1337202 134974633146048 "POST /api/auth/login/ HTTP/1.1" 200 1021
+INFO 2025-05-28 16:38:31,687 views 1337202 134974633146048 Connexion réussie pour akemi@gmail.com depuis 127.0.0.1
+INFO 2025-05-28 16:38:31,688 basehttp 1337202 134974633146048 "POST /api/auth/login/ HTTP/1.1" 200 1021
+WARNING 2025-05-28 16:38:37,222 log 1337202 134974633146048 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 16:38:37,222 basehttp 1337202 134974633146048 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:38:37,288 log 1337202 134974614271680 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 16:38:37,289 basehttp 1337202 134974614271680 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:38:38,364 log 1337202 134974614271680 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 16:38:38,364 basehttp 1337202 134974614271680 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:38:38,556 log 1337202 134974614271680 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 16:38:38,557 basehttp 1337202 134974614271680 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:38:40,372 log 1337202 134974614271680 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 16:38:40,373 basehttp 1337202 134974614271680 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:38:40,566 log 1337202 134974614271680 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 16:38:40,566 basehttp 1337202 134974614271680 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:38:44,381 log 1337202 134974614271680 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 16:38:44,382 basehttp 1337202 134974614271680 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:38:44,691 log 1337202 134974614271680 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 16:38:44,691 basehttp 1337202 134974614271680 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:39:16,927 log 1337202 134974614271680 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 16:39:16,929 log 1337202 134974633146048 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 16:39:16,996 basehttp 1337202 134974633146048 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:39:17,000 basehttp 1337202 134974614271680 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:39:18,032 log 1337202 134974614271680 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 16:39:18,033 basehttp 1337202 134974614271680 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:39:18,112 log 1337202 134974614271680 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 16:39:18,113 basehttp 1337202 134974614271680 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:39:20,040 log 1337202 134974614271680 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 16:39:20,040 basehttp 1337202 134974614271680 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:39:20,141 log 1337202 134974614271680 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 16:39:20,141 basehttp 1337202 134974614271680 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:41:10,177 log 1337202 134974614271680 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 16:41:10,178 basehttp 1337202 134974614271680 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:41:10,184 log 1337202 134974633146048 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 16:41:10,185 basehttp 1337202 134974633146048 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:41:11,220 log 1337202 134974633146048 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 16:41:11,221 basehttp 1337202 134974633146048 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:41:11,337 log 1337202 134974633146048 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 16:41:11,337 basehttp 1337202 134974633146048 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:41:13,229 log 1337202 134974633146048 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 16:41:13,229 basehttp 1337202 134974633146048 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:41:13,355 log 1337202 134974633146048 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 16:41:13,357 basehttp 1337202 134974633146048 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:41:17,239 log 1337202 134974633146048 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 16:41:17,239 basehttp 1337202 134974633146048 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:41:17,392 log 1337202 134974633146048 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 16:41:17,394 basehttp 1337202 134974633146048 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:47:02,774 log 1337202 134974633146048 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 16:47:02,776 log 1337202 134974614271680 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 16:47:02,859 basehttp 1337202 134974633146048 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:47:02,860 basehttp 1337202 134974614271680 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:47:04,295 log 1337202 134974614271680 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 16:47:04,297 log 1337202 134974633146048 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 16:47:04,310 basehttp 1337202 134974614271680 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:47:04,311 basehttp 1337202 134974633146048 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:47:06,335 log 1337202 134974633146048 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 16:47:06,336 basehttp 1337202 134974633146048 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:47:06,343 log 1337202 134974614271680 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 16:47:06,346 basehttp 1337202 134974614271680 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:47:10,495 log 1337202 134974614271680 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 16:47:10,503 basehttp 1337202 134974614271680 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:47:10,579 log 1337202 134974614271680 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 16:47:10,581 basehttp 1337202 134974614271680 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:47:11,504 log 1337202 134974614271680 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 16:47:11,506 log 1337202 134974633146048 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 16:47:11,511 basehttp 1337202 134974633146048 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:47:11,511 basehttp 1337202 134974614271680 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:47:12,565 log 1337202 134974614271680 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 16:47:12,566 basehttp 1337202 134974614271680 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:47:12,686 log 1337202 134974614271680 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 16:47:12,692 basehttp 1337202 134974614271680 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:47:14,578 log 1337202 134974614271680 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 16:47:14,579 basehttp 1337202 134974614271680 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:47:14,737 log 1337202 134974614271680 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 16:47:14,745 basehttp 1337202 134974614271680 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:47:18,606 log 1337202 134974614271680 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 16:47:18,616 basehttp 1337202 134974614271680 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:47:18,834 log 1337202 134974614271680 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 16:47:18,845 basehttp 1337202 134974614271680 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:47:56,468 log 1337202 134974614271680 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 16:47:56,471 basehttp 1337202 134974614271680 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+INFO 2025-05-28 16:47:56,662 basehttp 1337202 134974614271680 "OPTIONS /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 200 0
+INFO 2025-05-28 16:47:57,459 basehttp 1337202 134974614271680 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 200 52
+WARNING 2025-05-28 16:47:57,594 log 1337202 134974614271680 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 16:47:57,595 basehttp 1337202 134974614271680 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:47:59,610 log 1337202 134974614271680 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 16:47:59,610 basehttp 1337202 134974614271680 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 16:48:03,642 log 1337202 134974614271680 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 16:48:03,653 basehttp 1337202 134974614271680 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+INFO 2025-05-28 16:48:32,622 basehttp 1337202 134974614271680 "OPTIONS /api/identites/personnes/?page_size=100 HTTP/1.1" 200 0
+INFO 2025-05-28 16:48:32,698 basehttp 1337202 134974614271680 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 200 52
+INFO 2025-05-28 19:23:28,874 autoreload 8735 126060435740480 Watching for file changes with StatReloader
+INFO 2025-05-28 19:23:50,261 basehttp 8735 126060108707520 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+INFO 2025-05-28 19:23:53,449 views 8735 126060108707520 Connexion réussie pour akemi@gmail.com depuis 127.0.0.1
+INFO 2025-05-28 19:23:53,451 basehttp 8735 126060108707520 "POST /api/auth/login/ HTTP/1.1" 200 1021

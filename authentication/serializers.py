@@ -1,82 +1,99 @@
+import logging
+
+from cartes.models import CarteRFID
+from django.contrib.auth import authenticate, get_user_model
+from django.contrib.auth.password_validation import validate_password
+from django.utils import timezone
+from identites.models import Utilisateur
 from rest_framework import serializers
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
-from django.contrib.auth import authenticate
-from django.contrib.auth.password_validation import validate_password
-from identites.models import Utilisateur
-from .models import Permission, Role, UserRole
 
+from .models import LoginAttempt, Permission, Role, UserRole
+
+User = get_user_model()
+
+logger = logging.getLogger('authentication')
 
 class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
-    """Serializer personnalisé pour l'authentification JWT"""
-    
+    """Serializer personnalisé pour l'authentification JWT via email ou carte RFID"""
+    username_field = 'email'
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.fields['username'] = serializers.CharField()
-        self.fields['password'] = serializers.CharField()
+        # Remplacer username par email
+        self.fields.pop('username', None)
+        self.fields['email'] = serializers.EmailField()
+        self.fields['password'] = serializers.CharField(write_only=True)
         self.fields['card_number'] = serializers.CharField(required=False)
         self.fields['remember_me'] = serializers.BooleanField(default=False)
 
     @classmethod
     def get_token(cls, user):
         token = super().get_token(user)
-        
-        # Ajouter des informations personnalisées au token
         token['user_id'] = str(user.id)
-        token['username'] = user.username
+        token['email'] = user.email
         token['role'] = user.role
         token['permissions'] = cls.get_user_permissions(user)
         token['is_admin'] = user.role in ['ADMIN', 'SUPERVISEUR']
-        
         return token
 
     @staticmethod
     def get_user_permissions(user):
         """Récupère les permissions de l'utilisateur"""
         permissions = []
-        user_roles = UserRole.objects.filter(user=user, is_active=True)
-        
+        user_roles = user.user_roles.filter(is_active=True)
         for user_role in user_roles:
-            role_permissions = user_role.role.permissions.filter(is_active=True)
-            for perm in role_permissions:
+            for perm in user_role.role.permissions.filter(is_active=True):
                 permissions.append(f"{perm.resource_type}.{perm.action_type}")
-        
-        return list(set(permissions))  # Supprimer les doublons
+        return list(set(permissions))
 
     def validate(self, attrs):
-        username = attrs.get('username')
+        email = attrs.get('email')
         password = attrs.get('password')
         card_number = attrs.get('card_number')
+        user = None
 
         if card_number:
             # Authentification par carte RFID
             try:
-                from cartes.models import Carte
-                carte = Carte.objects.get(numero_carte=card_number, statut='ACTIVE')
+                carte = CarteRFID.objects.get(numero_carte=card_number, statut='ACTIVE')
                 user = carte.proprietaire
-                if not user or not user.is_active:
+                if not user or not user.actif:
                     raise serializers.ValidationError('Carte non associée à un utilisateur actif.')
-            except Carte.DoesNotExist:
+            except CarteRFID.DoesNotExist:
                 raise serializers.ValidationError('Numéro de carte invalide.')
         else:
-            # Authentification classique
-            user = authenticate(username=username, password=password)
-            if not user:
-                raise serializers.ValidationError('Identifiants invalides.')
+            attrs['username'] = email
+            print(email)
+            print(password)
+            user = User.objects.get(email=email)
+            print(user)
+            if not user.check_password(password):
+                raise serializers.ValidationError('Email ou mot de passe invalide.')
 
+        # Vérifier statut du compte
         if not user.actif:
             raise serializers.ValidationError('Compte désactivé.')
-
-        # Vérifier si le compte est verrouillé
         if user.compte_verrouille_jusqu and user.compte_verrouille_jusqu > timezone.now():
             raise serializers.ValidationError('Compte temporairement verrouillé.')
 
-        # Mettre à jour la dernière connexion
+        # Mise à jour des logs utilisateur
         user.derniere_connexion = timezone.now()
         user.tentatives_connexion_echouees = 0
         user.save()
 
+        # Logging de la tentative
+        try:
+            LoginAttempt.objects.create(
+                username=user.email,
+                user=user,
+                attempt_type='SUCCESS',
+                ip_address=self.context['request'].META.get('REMOTE_ADDR'),
+                user_agent=self.context['request'].META.get('HTTP_USER_AGENT', '')
+            )
+        except Exception:
+            logger.warning('Erreur lors de l\'enregistrement de la tentative réussie pour %s', user.email)
+
         refresh = self.get_token(user)
-        
         return {
             'refresh': str(refresh),
             'access': str(refresh.access_token),
