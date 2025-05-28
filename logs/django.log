@@ -42,6 +42,7 @@ INFO 2025-05-28 12:46:39,527 autoreload 3840 4132 C:\Users\Gael\Lalia\RFID_Admin
 INFO 2025-05-28 12:46:40,803 autoreload 8464 2780 Watching for file changes with StatReloader
 INFO 2025-05-28 12:51:56,951 autoreload 4932 13404 Watching for file changes with StatReloader
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 INFO 2025-05-28 08:28:13,803 autoreload 624213 127776862000960 Watching for file changes with StatReloader
 >>>>>>> Stashed changes
@@ -269,3 +270,8 @@ WARNING 2025-05-28 18:18:30,536 log 13920 14292 Unauthorized: /api/cartes/cartes
 WARNING 2025-05-28 18:18:30,537 basehttp 13920 14292 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
 >>>>>>> origin/Lalia
 INFO 2025-05-28 15:56:37,593 autoreload 1271338 136777037055808 Watching for file changes with StatReloader
+=======
+=======
+INFO 2025-05-28 08:28:13,803 autoreload 624213 127776862000960 Watching for file changes with StatReloader
+>>>>>>> Stashed changes
+>>>>>>> origin/Lalia

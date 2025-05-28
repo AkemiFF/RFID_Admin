@@ -39,7 +39,7 @@ htmlcov/
 # === System ===
 .DS_Store
 Thumbs.db
-
+*.log
 # === MyPy & Type hints ===
 .mypy_cache/
 .dmypy.json
