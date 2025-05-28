@@ -1,7 +1,6 @@
 import uuid
 from django.db import models
-from django.contrib.gis.db import models as gis_models
-from django.contrib.postgres.fields import JSONField
+from django.db.models import JSONField
 from cartes.models import CarteRFID
 from identites.models import Utilisateur
 
@@ -35,7 +34,7 @@ class Transaction(models.Model):
     description = models.TextField(blank=True)
     categorie = models.CharField(max_length=100, blank=True)
     localisation = models.CharField(max_length=255, blank=True)
-    coordonnees_gps = gis_models.PointField(null=True, blank=True)
+    coordonnees_gps = models.CharField(null=True, blank=True)
     statut = models.CharField(max_length=20, choices=STATUT_CHOICES, default='EN_COURS')
     code_erreur = models.CharField(max_length=50, blank=True)
     message_erreur = models.TextField(blank=True)

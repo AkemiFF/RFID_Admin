@@ -1,6 +1,6 @@
 import uuid
 from django.db import models
-from django.contrib.postgres.fields import JSONField
+from django.db.models import JSONField
 from identites.models import Utilisateur
 from cartes.models import CarteRFID
 from transactions.models import Transaction
