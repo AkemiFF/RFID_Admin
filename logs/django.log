@@ -292,3 +292,52 @@ INFO 2025-05-28 16:07:43,010 basehttp 1296471 123706982516416 "GET /static/rest_
 INFO 2025-05-28 16:07:43,233 basehttp 1296471 123706982516416 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
 WARNING 2025-05-28 16:07:43,811 log 1296471 123706982516416 Not Found: /favicon.ico
 WARNING 2025-05-28 16:07:43,811 basehttp 1296471 123706982516416 "GET /favicon.ico HTTP/1.1" 404 3633
+INFO 2025-05-28 19:41:23,742 autoreload 12640 3308 Watching for file changes with StatReloader
+WARNING 2025-05-28 19:41:26,156 log 12640 14132 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 19:41:26,156 log 12640 5592 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 19:41:26,156 basehttp 12640 14132 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:26,156 basehttp 12640 5592 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:29,523 log 12640 5592 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 19:41:29,524 log 12640 14132 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 19:41:29,524 basehttp 12640 5592 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:29,525 basehttp 12640 14132 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:30,555 log 12640 5592 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 19:41:30,555 log 12640 14132 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 19:41:30,555 basehttp 12640 5592 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:30,555 basehttp 12640 14132 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:32,573 log 12640 14132 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 19:41:32,573 log 12640 5592 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 19:41:32,573 basehttp 12640 14132 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:32,573 basehttp 12640 5592 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:35,761 log 12640 5592 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 19:41:35,762 log 12640 14132 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 19:41:35,763 basehttp 12640 5592 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:35,763 basehttp 12640 14132 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:36,806 log 12640 14132 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 19:41:36,806 log 12640 5592 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 19:41:36,806 basehttp 12640 14132 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:36,806 basehttp 12640 5592 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:38,833 log 12640 5592 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 19:41:38,833 log 12640 14132 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 19:41:38,833 basehttp 12640 14132 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:38,833 basehttp 12640 5592 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:42,850 log 12640 5592 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 19:41:42,850 log 12640 14132 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 19:41:42,850 basehttp 12640 5592 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:42,850 basehttp 12640 14132 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:53,917 log 12640 5592 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 19:41:53,920 log 12640 14132 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 19:41:53,923 basehttp 12640 5592 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:53,929 basehttp 12640 14132 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:54,934 log 12640 14132 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 19:41:54,934 basehttp 12640 14132 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:54,966 log 12640 14132 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 19:41:54,967 basehttp 12640 14132 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:56,950 log 12640 14132 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 19:41:56,950 basehttp 12640 14132 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:56,982 log 12640 14132 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 19:41:56,982 basehttp 12640 14132 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:42:00,969 log 12640 14132 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 19:42:00,970 basehttp 12640 14132 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:42:01,029 log 12640 14132 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 19:42:01,030 basehttp 12640 14132 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
