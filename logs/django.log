@@ -292,6 +292,7 @@ INFO 2025-05-28 16:07:43,010 basehttp 1296471 123706982516416 "GET /static/rest_
 INFO 2025-05-28 16:07:43,233 basehttp 1296471 123706982516416 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
 WARNING 2025-05-28 16:07:43,811 log 1296471 123706982516416 Not Found: /favicon.ico
 WARNING 2025-05-28 16:07:43,811 basehttp 1296471 123706982516416 "GET /favicon.ico HTTP/1.1" 404 3633
+<<<<<<< HEAD
 INFO 2025-05-28 16:11:33,418 autoreload 1296471 123707335665472 /home/akemi/Projects/Mere/django-rfid-system/Back/authentication/serializers.py changed, reloading.
 INFO 2025-05-28 16:11:34,704 autoreload 1305523 135061344757568 Watching for file changes with StatReloader
 INFO 2025-05-28 16:12:00,850 autoreload 1305523 135061344757568 /home/akemi/Projects/Mere/django-rfid-system/Back/authentication/views.py changed, reloading.
@@ -504,3 +505,444 @@ INFO 2025-05-28 19:23:28,874 autoreload 8735 126060435740480 Watching for file c
 INFO 2025-05-28 19:23:50,261 basehttp 8735 126060108707520 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
 INFO 2025-05-28 19:23:53,449 views 8735 126060108707520 Connexion rÃ©ussie pour akemi@gmail.com depuis 127.0.0.1
 INFO 2025-05-28 19:23:53,451 basehttp 8735 126060108707520 "POST /api/auth/login/ HTTP/1.1" 200 1021
+=======
+INFO 2025-05-28 19:41:23,742 autoreload 12640 3308 Watching for file changes with StatReloader
+WARNING 2025-05-28 19:41:26,156 log 12640 14132 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 19:41:26,156 log 12640 5592 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 19:41:26,156 basehttp 12640 14132 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:26,156 basehttp 12640 5592 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:29,523 log 12640 5592 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 19:41:29,524 log 12640 14132 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 19:41:29,524 basehttp 12640 5592 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:29,525 basehttp 12640 14132 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:30,555 log 12640 5592 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 19:41:30,555 log 12640 14132 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 19:41:30,555 basehttp 12640 5592 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:30,555 basehttp 12640 14132 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:32,573 log 12640 14132 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 19:41:32,573 log 12640 5592 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 19:41:32,573 basehttp 12640 14132 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:32,573 basehttp 12640 5592 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:35,761 log 12640 5592 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 19:41:35,762 log 12640 14132 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 19:41:35,763 basehttp 12640 5592 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:35,763 basehttp 12640 14132 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:36,806 log 12640 14132 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 19:41:36,806 log 12640 5592 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 19:41:36,806 basehttp 12640 14132 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:36,806 basehttp 12640 5592 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:38,833 log 12640 5592 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 19:41:38,833 log 12640 14132 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 19:41:38,833 basehttp 12640 14132 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:38,833 basehttp 12640 5592 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:42,850 log 12640 5592 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 19:41:42,850 log 12640 14132 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 19:41:42,850 basehttp 12640 5592 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:42,850 basehttp 12640 14132 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:53,917 log 12640 5592 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 19:41:53,920 log 12640 14132 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 19:41:53,923 basehttp 12640 5592 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:53,929 basehttp 12640 14132 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:54,934 log 12640 14132 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 19:41:54,934 basehttp 12640 14132 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:54,966 log 12640 14132 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 19:41:54,967 basehttp 12640 14132 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:56,950 log 12640 14132 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 19:41:56,950 basehttp 12640 14132 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:41:56,982 log 12640 14132 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 19:41:56,982 basehttp 12640 14132 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:42:00,969 log 12640 14132 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 19:42:00,970 basehttp 12640 14132 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 19:42:01,029 log 12640 14132 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 19:42:01,030 basehttp 12640 14132 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+INFO 2025-05-28 21:29:46,708 autoreload 4004 14696 Watching for file changes with StatReloader
+WARNING 2025-05-28 21:30:47,690 log 4004 1148 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 21:30:47,692 log 4004 2276 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 21:30:47,693 basehttp 4004 1148 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+WARNING 2025-05-28 21:30:47,694 basehttp 4004 2276 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 21:30:48,716 log 4004 2276 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 21:30:48,717 log 4004 1148 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 21:30:48,719 basehttp 4004 2276 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+WARNING 2025-05-28 21:30:48,719 basehttp 4004 1148 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 21:30:51,210 log 4004 1148 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 21:30:51,211 log 4004 2276 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 21:30:51,212 basehttp 4004 1148 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+WARNING 2025-05-28 21:30:51,222 basehttp 4004 2276 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 21:30:54,172 log 4004 2276 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 21:30:54,174 log 4004 1148 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 21:30:54,174 basehttp 4004 2276 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 21:30:54,176 basehttp 4004 1148 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 21:30:55,196 log 4004 1148 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 21:30:55,200 log 4004 2276 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 21:30:55,201 basehttp 4004 2276 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 21:30:55,201 basehttp 4004 1148 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 21:30:57,212 log 4004 2276 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 21:30:57,212 log 4004 1148 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 21:30:57,216 basehttp 4004 2276 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 21:30:57,216 basehttp 4004 1148 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 21:31:01,228 log 4004 1148 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 21:31:01,232 log 4004 2276 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 21:31:01,232 basehttp 4004 1148 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 21:31:01,233 basehttp 4004 2276 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 21:31:09,766 log 4004 2276 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 21:31:09,767 basehttp 4004 2276 "GET /api/transactions/transactions/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 21:31:09,770 log 4004 2276 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 21:31:09,771 basehttp 4004 2276 "GET /api/transactions/transactions/?page=1&page_size=10 HTTP/1.1" 401 58
+INFO 2025-05-28 21:41:03,940 autoreload 7432 15556 Watching for file changes with StatReloader
+INFO 2025-05-28 21:43:51,244 basehttp 7432 1832 "OPTIONS /api/auth/token/refresh/admin/ HTTP/1.1" 200 0
+INFO 2025-05-28 21:43:51,249 basehttp 7432 13608 "OPTIONS /api/auth/token/refresh/admin/ HTTP/1.1" 200 0
+WARNING 2025-05-28 21:43:51,508 log 7432 13608 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:43:51,508 log 7432 1832 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:43:51,512 basehttp 7432 1832 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:43:51,512 basehttp 7432 13608 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:43:52,541 log 7432 1832 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:43:52,544 log 7432 13608 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:43:52,545 basehttp 7432 1832 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:43:52,545 basehttp 7432 13608 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+INFO 2025-05-28 21:44:02,696 basehttp 7432 13608 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+ERROR 2025-05-28 21:44:02,989 log 7432 13608 Internal Server Error: /api/auth/login/
+Traceback (most recent call last):
+  File "C:\Users\Gael\Lalia\RFID_Admin\authentication\views.py", line 36, in post
+    response = super().post(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework_simplejwt\views.py", line 44, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\serializers.py", line 231, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'username': [ErrorDetail(string='Ce champ est obligatoire.', code='required')]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: ERREUR:  la relation « auth_login_attempts » n'existe pas
+LINE 1: INSERT INTO "auth_login_attempts" ("id", "username", "user_i...
+                    ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\Lalia\RFID_Admin\authentication\views.py", line 57, in post
+    LoginAttempt.objects.create(
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\compiler.py", line 1820, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ERREUR:  la relation « auth_login_attempts » n'existe pas
+LINE 1: INSERT INTO "auth_login_attempts" ("id", "username", "user_i...
+                    ^
+
+ERROR 2025-05-28 21:44:02,997 basehttp 7432 13608 "POST /api/auth/login/ HTTP/1.1" 500 199735
+INFO 2025-05-28 21:45:19,373 autoreload 15724 3456 Watching for file changes with StatReloader
+WARNING 2025-05-28 21:45:27,009 log 15724 15888 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:45:27,022 log 15724 7820 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:45:27,022 basehttp 15724 15888 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:45:27,022 basehttp 15724 7820 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:45:28,208 log 15724 7820 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:45:28,210 basehttp 15724 7820 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:45:28,213 log 15724 15888 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:45:28,214 basehttp 15724 15888 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:45:29,226 log 15724 15888 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:45:29,238 log 15724 7820 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:45:29,238 basehttp 15724 7820 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:45:29,238 basehttp 15724 15888 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:45:31,271 log 15724 15888 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:45:31,274 log 15724 7820 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:45:31,275 basehttp 15724 15888 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:45:31,275 basehttp 15724 7820 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:45:34,871 log 15724 7820 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:45:34,874 log 15724 15888 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:45:34,874 basehttp 15724 7820 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:45:34,876 basehttp 15724 15888 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:45:35,933 log 15724 7820 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:45:35,937 log 15724 15888 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:45:35,939 basehttp 15724 7820 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:45:35,939 basehttp 15724 15888 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:45:40,670 log 15724 7820 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:45:40,671 log 15724 15888 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:45:40,672 basehttp 15724 7820 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:45:40,674 basehttp 15724 15888 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:45:44,702 log 15724 15888 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:45:44,703 log 15724 7820 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:45:44,705 basehttp 15724 15888 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:45:44,705 basehttp 15724 7820 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:46:29,906 log 15724 13712 Unauthorized: /api/cartes/
+WARNING 2025-05-28 21:46:29,908 basehttp 15724 13712 "GET /api/cartes/ HTTP/1.1" 401 9821
+WARNING 2025-05-28 21:46:30,145 log 15724 13712 Not Found: /favicon.ico
+WARNING 2025-05-28 21:46:30,146 basehttp 15724 13712 "GET /favicon.ico HTTP/1.1" 404 3148
+WARNING 2025-05-28 21:46:35,301 log 15724 13712 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 21:46:35,301 basehttp 15724 13712 "GET /api/cartes/cartes/ HTTP/1.1" 401 10008
+WARNING 2025-05-28 21:46:38,928 log 15724 7820 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:46:38,930 basehttp 15724 7820 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:46:38,934 log 15724 15888 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:46:38,935 basehttp 15724 15888 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:46:39,964 log 15724 15888 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:46:39,966 basehttp 15724 15888 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:46:39,969 log 15724 7820 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:46:39,970 basehttp 15724 7820 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:46:41,975 log 15724 7820 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:46:41,975 basehttp 15724 7820 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:46:42,021 log 15724 7820 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:46:42,033 basehttp 15724 7820 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:46:45,989 log 15724 7820 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:46:45,989 basehttp 15724 7820 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:46:46,070 log 15724 7820 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:46:46,072 basehttp 15724 7820 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:46:54,799 log 15724 7820 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:46:54,802 basehttp 15724 7820 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:46:54,807 log 15724 15888 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:46:54,808 basehttp 15724 15888 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:46:55,825 log 15724 15888 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:46:55,834 basehttp 15724 15888 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:46:55,872 log 15724 15888 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:46:55,874 basehttp 15724 15888 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:46:57,844 log 15724 15888 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:46:57,844 basehttp 15724 15888 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:46:57,916 log 15724 15888 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:46:57,916 basehttp 15724 15888 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:47:01,876 log 15724 15888 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:47:01,876 basehttp 15724 15888 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:47:01,968 log 15724 15888 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:47:01,981 basehttp 15724 15888 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 21:47:14,422 log 15724 13712 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 21:47:14,423 basehttp 15724 13712 "GET /api/auth/token/refresh/admin/ HTTP/1.1" 404 8421
+WARNING 2025-05-28 21:47:35,937 log 15724 13712 Not Found: /api/token/refresh/admin/
+WARNING 2025-05-28 21:47:35,937 basehttp 15724 13712 "GET /api/token/refresh/admin/ HTTP/1.1" 404 3187
+WARNING 2025-05-28 21:47:50,417 log 15724 13712 Not Found: /api/auth/refresh/admin/
+WARNING 2025-05-28 21:47:50,418 basehttp 15724 13712 "GET /api/auth/refresh/admin/ HTTP/1.1" 404 8403
+WARNING 2025-05-28 21:48:38,857 log 15724 13712 Unauthorized: /api/cartes/
+WARNING 2025-05-28 21:48:38,858 basehttp 15724 13712 "GET /api/cartes/ HTTP/1.1" 401 9821
+INFO 2025-05-28 21:58:40,740 autoreload 16152 3312 Watching for file changes with StatReloader
+WARNING 2025-05-28 21:58:49,413 log 16152 252 Method Not Allowed: /api/auth/login/
+WARNING 2025-05-28 21:58:49,414 basehttp 16152 252 "GET /api/auth/login/ HTTP/1.1" 405 13038
+INFO 2025-05-28 21:58:49,621 basehttp 16152 6948 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2025-05-28 21:58:49,624 basehttp 16152 13188 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2025-05-28 21:58:49,653 basehttp 16152 6948 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2025-05-28 21:58:49,658 basehttp 16152 252 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2025-05-28 21:58:49,684 basehttp 16152 6948 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2025-05-28 21:58:49,693 basehttp 16152 252 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2025-05-28 21:58:49,733 basehttp 16152 13188 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2025-05-28 21:58:49,739 basehttp 16152 6948 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2025-05-28 21:58:49,754 basehttp 16152 252 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2025-05-28 21:58:49,767 basehttp 16152 1388 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2025-05-28 21:58:49,771 basehttp 16152 6948 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2025-05-28 21:58:49,774 basehttp 16152 13188 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+WARNING 2025-05-28 21:58:49,929 log 16152 13188 Not Found: /favicon.ico
+WARNING 2025-05-28 21:58:49,930 basehttp 16152 13188 "GET /favicon.ico HTTP/1.1" 404 3148
+WARNING 2025-05-28 21:59:09,653 views 16152 15556 Tentative de connexion échouée pour  depuis 127.0.0.1
+WARNING 2025-05-28 21:59:09,654 log 16152 15556 Bad Request: /api/auth/login/
+WARNING 2025-05-28 21:59:09,654 basehttp 16152 15556 "POST /api/auth/login/ HTTP/1.1" 400 42
+WARNING 2025-05-28 21:59:21,277 views 16152 15556 Tentative de connexion échouée pour  depuis 127.0.0.1
+WARNING 2025-05-28 21:59:21,278 log 16152 15556 Bad Request: /api/auth/login/
+WARNING 2025-05-28 21:59:21,280 basehttp 16152 15556 "POST /api/auth/login/ HTTP/1.1" 400 42
+WARNING 2025-05-28 21:59:23,093 views 16152 15556 Tentative de connexion échouée pour  depuis 127.0.0.1
+WARNING 2025-05-28 21:59:23,094 log 16152 15556 Bad Request: /api/auth/login/
+WARNING 2025-05-28 21:59:23,096 basehttp 16152 15556 "POST /api/auth/login/ HTTP/1.1" 400 42
+WARNING 2025-05-28 21:59:46,376 views 16152 13188 Tentative de connexion échouée pour Lalia depuis 127.0.0.1
+ERROR 2025-05-28 21:59:46,427 log 16152 13188 Internal Server Error: /api/auth/login/
+Traceback (most recent call last):
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\Lalia\RFID_Admin\authentication\views.py", line 36, in post
+    response = super().post(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework_simplejwt\views.py", line 44, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\serializers.py", line 445, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\Lalia\RFID_Admin\authentication\serializers.py", line 74, in validate
+    user.derniere_connexion = timezone.now()
+                              ^^^^^^^^
+NameError: name 'timezone' is not defined
+ERROR 2025-05-28 21:59:46,432 basehttp 16152 13188 "POST /api/auth/login/ HTTP/1.1" 500 120545
+WARNING 2025-05-28 21:59:46,732 log 16152 13188 Not Found: /favicon.ico
+WARNING 2025-05-28 21:59:46,738 basehttp 16152 13188 "GET /favicon.ico HTTP/1.1" 404 3148
+WARNING 2025-05-28 22:00:16,801 views 16152 512 Tentative de connexion échouée pour lalia@gmail.com depuis 127.0.0.1
+WARNING 2025-05-28 22:00:16,807 log 16152 512 Bad Request: /api/auth/login/
+WARNING 2025-05-28 22:00:16,808 basehttp 16152 512 "POST /api/auth/login/ HTTP/1.1" 400 13069
+INFO 2025-05-28 22:01:48,590 autoreload 14804 6764 Watching for file changes with StatReloader
+WARNING 2025-05-28 22:01:57,187 views 14804 4368 Tentative de connexion échouée pour lalia@gmail.com depuis 127.0.0.1
+WARNING 2025-05-28 22:01:57,317 log 14804 4368 Bad Request: /api/auth/login/
+WARNING 2025-05-28 22:01:57,318 basehttp 14804 4368 "POST /api/auth/login/ HTTP/1.1" 400 13069
+INFO 2025-05-28 22:01:57,469 basehttp 14804 4368 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2025-05-28 22:01:57,479 basehttp 14804 4368 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2025-05-28 22:01:57,480 basehttp 14804 5424 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2025-05-28 22:01:57,488 basehttp 14804 5424 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2025-05-28 22:01:57,488 basehttp 14804 4368 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2025-05-28 22:01:57,499 basehttp 14804 4368 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2025-05-28 22:01:57,499 basehttp 14804 5424 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2025-05-28 22:01:57,503 basehttp 14804 1480 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2025-05-28 22:01:57,506 basehttp 14804 4368 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2025-05-28 22:01:57,510 basehttp 14804 5424 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2025-05-28 22:01:57,510 basehttp 14804 1480 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2025-05-28 22:01:57,520 basehttp 14804 1480 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+WARNING 2025-05-28 22:01:57,593 log 14804 1480 Not Found: /favicon.ico
+WARNING 2025-05-28 22:01:57,594 basehttp 14804 1480 "GET /favicon.ico HTTP/1.1" 404 3148
+WARNING 2025-05-28 22:02:09,163 views 14804 1480 Tentative de connexion échouée pour Azumi depuis 127.0.0.1
+ERROR 2025-05-28 22:02:09,202 log 14804 1480 Internal Server Error: /api/auth/login/
+Traceback (most recent call last):
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\Lalia\RFID_Admin\authentication\views.py", line 36, in post
+    response = super().post(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework_simplejwt\views.py", line 44, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\serializers.py", line 445, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gael\Lalia\RFID_Admin\authentication\serializers.py", line 74, in validate
+    user.derniere_connexion = timezone.now()
+                              ^^^^^^^^
+NameError: name 'timezone' is not defined
+ERROR 2025-05-28 22:02:09,208 basehttp 14804 1480 "POST /api/auth/login/ HTTP/1.1" 500 120545
+WARNING 2025-05-28 22:02:33,470 views 14804 11248 Tentative de connexion échouée pour  depuis 127.0.0.1
+WARNING 2025-05-28 22:02:33,470 log 14804 11248 Bad Request: /api/auth/login/
+WARNING 2025-05-28 22:02:33,472 basehttp 14804 11248 "POST /api/auth/login/ HTTP/1.1" 400 42
+WARNING 2025-05-28 22:10:30,451 log 14804 16500 Not Found: /favicon.ico
+WARNING 2025-05-28 22:10:30,451 basehttp 14804 16500 "GET /favicon.ico HTTP/1.1" 404 3148
+WARNING 2025-05-28 22:10:35,232 log 14804 204 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 22:10:35,234 log 14804 13424 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 22:10:35,236 basehttp 14804 13424 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 22:10:35,236 basehttp 14804 204 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 22:10:36,293 log 14804 204 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 22:10:36,295 basehttp 14804 204 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 22:14:20,652 views 14804 204 Tentative de connexion échouée pour  depuis 127.0.0.1
+WARNING 2025-05-28 22:14:20,653 log 14804 204 Bad Request: /api/auth/login/
+WARNING 2025-05-28 22:14:20,654 basehttp 14804 204 "POST /api/auth/login/ HTTP/1.1" 400 42
+WARNING 2025-05-28 22:14:40,897 views 14804 16500 Tentative de connexion échouée pour lalia@gmail.com depuis 127.0.0.1
+WARNING 2025-05-28 22:14:40,904 log 14804 16500 Bad Request: /api/auth/login/
+WARNING 2025-05-28 22:14:40,905 basehttp 14804 16500 "POST /api/auth/login/ HTTP/1.1" 400 13069
+INFO 2025-05-28 22:14:40,935 basehttp 14804 16500 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2025-05-28 22:14:40,938 basehttp 14804 17136 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2025-05-28 22:14:40,955 basehttp 14804 16500 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2025-05-28 22:14:40,955 basehttp 14804 17136 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2025-05-28 22:14:40,961 basehttp 14804 16500 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2025-05-28 22:14:40,963 basehttp 14804 17136 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2025-05-28 22:14:40,968 basehttp 14804 16500 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2025-05-28 22:14:40,978 basehttp 14804 17136 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2025-05-28 22:14:40,980 basehttp 14804 16500 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2025-05-28 22:14:40,982 basehttp 14804 17136 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2025-05-28 22:14:40,986 basehttp 14804 16500 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2025-05-28 22:14:40,987 basehttp 14804 17136 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+WARNING 2025-05-28 22:14:41,059 log 14804 17136 Not Found: /favicon.ico
+WARNING 2025-05-28 22:14:41,061 basehttp 14804 17136 "GET /favicon.ico HTTP/1.1" 404 3148
+WARNING 2025-05-28 22:14:59,678 views 14804 204 Tentative de connexion échouée pour  depuis 127.0.0.1
+WARNING 2025-05-28 22:14:59,678 log 14804 204 Bad Request: /api/auth/login/
+WARNING 2025-05-28 22:14:59,679 basehttp 14804 204 "POST /api/auth/login/ HTTP/1.1" 400 42
+WARNING 2025-05-28 22:28:26,202 log 14804 2164 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 22:28:26,212 log 14804 15092 Not Found: /api/auth/token/refresh/admin/
+WARNING 2025-05-28 22:28:26,212 basehttp 14804 2164 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 22:28:26,213 basehttp 14804 15092 "POST /api/auth/token/refresh/admin/ HTTP/1.1" 404 8422
+WARNING 2025-05-28 22:30:10,336 views 14804 17144 Tentative de connexion échouée pour  depuis 127.0.0.1
+WARNING 2025-05-28 22:30:10,337 log 14804 17144 Bad Request: /api/auth/login/
+WARNING 2025-05-28 22:30:10,340 basehttp 14804 17144 "POST /api/auth/login/ HTTP/1.1" 400 42
+>>>>>>> origin/Lalia
