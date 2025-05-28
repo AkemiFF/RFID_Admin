@@ -1,20 +1,23 @@
-from rest_framework import status, generics, viewsets
-from rest_framework.decorators import { api }_view, permission_classes, action
-from rest_framework.permissions import IsAuthenticated, AllowAny
-from rest_framework.response import Response
-from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
-from rest_framework_simplejwt.tokens import RefreshToken
-from django.contrib.auth import logout
-from django.utils import timezone
-from django.db.models import Q
-from .serializers import (
-    CustomTokenObtainPairSerializer, UserSerializer, ChangePasswordSerializer,
-    PermissionSerializer, RoleSerializer, UserRoleSerializer
-)
-from .models import Permission, Role, UserRole, LoginAttempt
-from .permissions import HasPermission
-from identites.models import Utilisateur
 import logging
+
+from django.contrib.auth import logout
+from django.db.models import Q
+from django.utils import timezone
+from identites.models import Utilisateur
+from rest_framework import generics, status, viewsets
+from rest_framework.decorators import action, api_view, permission_classes
+from rest_framework.permissions import AllowAny, IsAuthenticated
+from rest_framework.response import Response
+from rest_framework_simplejwt.tokens import RefreshToken
+from rest_framework_simplejwt.views import (TokenObtainPairView,
+                                            TokenRefreshView)
+
+from .models import LoginAttempt, Permission, Role, UserRole
+from .permissions import HasPermission
+from .serializers import (ChangePasswordSerializer,
+                          CustomTokenObtainPairSerializer,
+                          PermissionSerializer, RoleSerializer,
+                          UserRoleSerializer, UserSerializer)
 
 logger = logging.getLogger('authentication')
 
