@@ -41,6 +41,231 @@ INFO 2025-05-28 12:44:40,955 autoreload 3840 4132 Watching for file changes with
 INFO 2025-05-28 12:46:39,527 autoreload 3840 4132 C:\Users\Gael\Lalia\RFID_Admin\authentication\models.py changed, reloading.
 INFO 2025-05-28 12:46:40,803 autoreload 8464 2780 Watching for file changes with StatReloader
 INFO 2025-05-28 12:51:56,951 autoreload 4932 13404 Watching for file changes with StatReloader
+<<<<<<< HEAD
 =======
 INFO 2025-05-28 08:28:13,803 autoreload 624213 127776862000960 Watching for file changes with StatReloader
 >>>>>>> Stashed changes
+=======
+INFO 2025-05-28 13:31:32,052 autoreload 16172 9436 Watching for file changes with StatReloader
+INFO 2025-05-28 13:32:30,949 autoreload 16172 9436 C:\Users\Gael\Lalia\RFID_Admin\rfid_system\settings.py changed, reloading.
+INFO 2025-05-28 13:32:32,214 autoreload 15692 1672 Watching for file changes with StatReloader
+INFO 2025-05-28 13:33:59,388 autoreload 6552 6292 Watching for file changes with StatReloader
+WARNING 2025-05-28 13:34:12,265 log 6552 260 Not Found: /
+WARNING 2025-05-28 13:34:12,266 basehttp 6552 260 "GET / HTTP/1.1" 404 3097
+WARNING 2025-05-28 13:34:12,434 log 6552 260 Not Found: /favicon.ico
+WARNING 2025-05-28 13:34:12,436 basehttp 6552 260 "GET /favicon.ico HTTP/1.1" 404 3148
+INFO 2025-05-28 13:44:05,743 autoreload 15404 9828 Watching for file changes with StatReloader
+WARNING 2025-05-28 13:44:21,150 log 15404 6660 Not Found: /api
+WARNING 2025-05-28 13:44:42,300 log 15404 9108 Not Found: /api/
+WARNING 2025-05-28 13:44:54,340 log 15404 15528 Not Found: /
+INFO 2025-05-28 13:45:03,380 basehttp 15404 6660 - Broken pipe from ('127.0.0.1', 52470)
+INFO 2025-05-28 13:45:03,383 basehttp 15404 9108 - Broken pipe from ('127.0.0.1', 52471)
+INFO 2025-05-28 13:45:03,390 basehttp 15404 15528 - Broken pipe from ('127.0.0.1', 52484)
+WARNING 2025-05-28 13:45:09,374 log 15404 7060 Not Found: /
+WARNING 2025-05-28 13:45:09,375 basehttp 15404 7060 "GET / HTTP/1.1" 404 3097
+WARNING 2025-05-28 13:45:23,215 log 15404 7060 Unauthorized: /api/identites/
+WARNING 2025-05-28 13:45:23,216 basehttp 15404 7060 "GET /api/identites/ HTTP/1.1" 401 9836
+INFO 2025-05-28 13:45:23,425 basehttp 15404 7060 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2025-05-28 13:45:23,453 basehttp 15404 7060 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2025-05-28 13:45:23,482 basehttp 15404 11792 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2025-05-28 13:45:23,483 basehttp 15404 8272 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2025-05-28 13:45:23,500 basehttp 15404 7060 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2025-05-28 13:45:23,517 basehttp 15404 8272 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2025-05-28 13:45:23,518 basehttp 15404 15620 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2025-05-28 13:45:23,528 basehttp 15404 11792 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2025-05-28 13:45:23,540 basehttp 15404 15620 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2025-05-28 13:45:23,569 basehttp 15404 7060 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2025-05-28 13:45:23,572 basehttp 15404 17152 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2025-05-28 13:45:23,580 basehttp 15404 2052 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2025-05-28 14:37:19,511 autoreload 18100 18092 Watching for file changes with StatReloader
+WARNING 2025-05-28 14:37:26,413 log 18100 6572 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 14:37:26,414 log 18100 4220 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 14:37:26,415 basehttp 18100 6572 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 14:37:26,415 basehttp 18100 4220 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 14:37:30,869 log 18100 4220 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 14:37:30,871 log 18100 6572 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 14:37:30,872 basehttp 18100 4220 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 14:37:30,872 basehttp 18100 6572 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 14:37:39,047 log 18100 6572 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 14:37:39,049 log 18100 4220 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 14:37:39,050 basehttp 18100 6572 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 14:37:39,051 basehttp 18100 4220 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+WARNING 2025-05-28 14:46:15,818 log 18100 5944 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 14:46:15,822 log 18100 17136 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 14:46:15,822 basehttp 18100 5944 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 14:46:15,823 basehttp 18100 17136 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+INFO 2025-05-28 15:01:53,660 autoreload 17576 7552 Watching for file changes with StatReloader
+WARNING 2025-05-28 15:05:35,646 log 17576 9344 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 15:05:35,647 log 17576 17208 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 15:05:35,648 basehttp 17576 9344 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:05:35,648 basehttp 17576 17208 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:11:50,269 log 17576 16180 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 15:11:50,270 basehttp 17576 16180 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:11:50,272 log 17576 12332 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 15:11:50,273 basehttp 17576 12332 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:11:57,157 log 17576 12332 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 15:11:57,158 log 17576 16180 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 15:11:57,159 basehttp 17576 12332 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:11:57,159 basehttp 17576 16180 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:11:58,892 log 17576 16180 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 15:11:58,894 log 17576 12332 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 15:11:58,915 basehttp 17576 16180 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:11:58,920 basehttp 17576 12332 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:38:41,705 log 17576 3476 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 15:38:41,706 basehttp 17576 3476 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:38:41,708 log 17576 2920 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 15:38:41,709 basehttp 17576 2920 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:44:29,588 log 17576 5768 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 15:44:29,589 basehttp 17576 5768 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:44:29,591 log 17576 14404 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 15:44:29,592 basehttp 17576 14404 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:44:30,602 log 17576 14404 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 15:44:30,602 basehttp 17576 14404 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:44:30,623 log 17576 14404 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 15:44:30,623 basehttp 17576 14404 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:44:32,619 log 17576 14404 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 15:44:32,619 basehttp 17576 14404 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:44:32,644 log 17576 14404 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 15:44:32,644 basehttp 17576 14404 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:44:36,631 log 17576 14404 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 15:44:36,632 basehttp 17576 14404 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:44:36,669 log 17576 14404 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 15:44:36,673 basehttp 17576 14404 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:44:37,753 log 17576 14404 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 15:44:37,754 log 17576 5768 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 15:44:37,754 basehttp 17576 14404 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:44:37,756 basehttp 17576 5768 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:44:38,766 log 17576 5768 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 15:44:38,766 basehttp 17576 5768 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:44:38,771 log 17576 5768 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 15:44:38,773 basehttp 17576 5768 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:44:40,781 log 17576 5768 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 15:44:40,782 basehttp 17576 5768 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:44:40,788 log 17576 5768 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 15:44:40,788 basehttp 17576 5768 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:44:44,800 log 17576 5768 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 15:44:44,801 basehttp 17576 5768 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:44:44,809 log 17576 5768 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 15:44:44,811 basehttp 17576 5768 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:45:10,925 log 17576 5768 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 15:45:10,927 log 17576 14404 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 15:45:10,932 basehttp 17576 5768 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:45:10,944 basehttp 17576 14404 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:45:11,942 log 17576 14404 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 15:45:11,943 basehttp 17576 14404 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:45:11,995 log 17576 14404 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 15:45:11,996 basehttp 17576 14404 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:45:13,959 log 17576 14404 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 15:45:13,959 basehttp 17576 14404 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:45:14,002 log 17576 14404 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 15:45:14,003 basehttp 17576 14404 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:45:17,967 log 17576 14404 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 15:45:17,967 basehttp 17576 14404 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 15:45:18,068 log 17576 14404 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 15:45:18,069 basehttp 17576 14404 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+INFO 2025-05-28 18:12:57,826 autoreload 15512 16476 Watching for file changes with StatReloader
+WARNING 2025-05-28 18:13:54,331 log 15512 10792 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 18:13:54,333 log 15512 12676 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 18:13:54,333 basehttp 15512 10792 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 18:13:54,342 basehttp 15512 12676 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+WARNING 2025-05-28 18:14:10,619 log 15512 12676 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 18:14:10,624 log 15512 10792 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 18:14:10,624 basehttp 15512 12676 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 18:14:10,627 basehttp 15512 10792 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+WARNING 2025-05-28 18:14:12,647 log 15512 10792 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 18:14:12,649 log 15512 12676 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 18:14:12,651 basehttp 15512 10792 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 18:14:12,652 basehttp 15512 12676 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+WARNING 2025-05-28 18:14:16,675 log 15512 12676 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 18:14:16,678 log 15512 10792 Unauthorized: /api/transactions/transactions/
+WARNING 2025-05-28 18:14:16,681 basehttp 15512 12676 "GET /api/cartes/cartes/?page_size=1 HTTP/1.1" 401 58
+WARNING 2025-05-28 18:14:16,681 basehttp 15512 10792 "GET /api/transactions/transactions/?page_size=4 HTTP/1.1" 401 58
+WARNING 2025-05-28 18:14:20,012 log 15512 12676 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 18:14:20,013 log 15512 10792 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 18:14:20,014 basehttp 15512 12676 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 18:14:20,014 basehttp 15512 10792 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 18:14:21,042 log 15512 10792 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 18:14:21,045 log 15512 12676 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 18:14:21,047 basehttp 15512 10792 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 18:14:21,047 basehttp 15512 12676 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 18:14:23,070 log 15512 12676 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 18:14:23,070 log 15512 10792 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 18:14:23,070 basehttp 15512 12676 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 18:14:23,075 basehttp 15512 10792 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 18:14:32,254 log 15512 10792 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 18:14:32,263 log 15512 12676 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 18:14:32,292 basehttp 15512 10792 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 18:14:32,293 basehttp 15512 12676 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 18:14:37,338 log 15512 12676 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 18:14:37,340 log 15512 10792 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 18:14:37,341 basehttp 15512 12676 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 18:14:37,341 basehttp 15512 10792 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 18:14:38,355 log 15512 10792 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 18:14:38,358 log 15512 12676 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 18:14:38,358 basehttp 15512 10792 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 18:14:38,360 basehttp 15512 12676 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 18:14:40,380 log 15512 12676 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 18:14:40,385 log 15512 10792 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 18:14:40,387 basehttp 15512 12676 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 18:14:40,389 basehttp 15512 10792 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 18:16:06,112 log 15512 10792 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 18:16:06,115 log 15512 12676 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 18:16:06,119 basehttp 15512 10792 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 18:16:06,123 basehttp 15512 12676 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 18:16:32,309 log 15512 8400 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 18:16:32,310 basehttp 15512 8400 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 10112
+INFO 2025-05-28 18:16:32,461 basehttp 15512 8400 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2025-05-28 18:16:32,482 basehttp 15512 13960 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2025-05-28 18:16:32,495 basehttp 15512 8400 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2025-05-28 18:16:32,511 basehttp 15512 7616 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2025-05-28 18:16:32,535 basehttp 15512 8400 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2025-05-28 18:16:32,565 basehttp 15512 7616 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2025-05-28 18:16:32,570 basehttp 15512 13960 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2025-05-28 18:16:32,599 basehttp 15512 13960 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2025-05-28 18:16:32,617 basehttp 15512 7616 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2025-05-28 18:16:32,627 basehttp 15512 8400 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2025-05-28 18:16:32,628 basehttp 15512 13960 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2025-05-28 18:16:32,634 basehttp 15512 7616 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+WARNING 2025-05-28 18:16:33,126 log 15512 7616 Not Found: /favicon.ico
+WARNING 2025-05-28 18:16:33,127 basehttp 15512 7616 "GET /favicon.ico HTTP/1.1" 404 3148
+WARNING 2025-05-28 18:16:40,627 log 15512 7616 Unauthorized: /api/cartes/
+WARNING 2025-05-28 18:16:40,629 basehttp 15512 7616 "GET /api/cartes/ HTTP/1.1" 401 9821
+INFO 2025-05-28 18:16:56,672 autoreload 15512 16476 C:\Users\Gael\Lalia\RFID_Admin\cartes\views.py changed, reloading.
+INFO 2025-05-28 18:16:59,030 autoreload 8300 2340 Watching for file changes with StatReloader
+WARNING 2025-05-28 18:17:03,842 log 8300 1104 Unauthorized: /api/cartes/
+WARNING 2025-05-28 18:17:03,843 basehttp 8300 1104 "GET /api/cartes/ HTTP/1.1" 401 9821
+INFO 2025-05-28 18:17:04,003 basehttp 8300 1104 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2025-05-28 18:17:04,003 basehttp 8300 10260 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2025-05-28 18:17:04,008 basehttp 8300 10260 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2025-05-28 18:17:04,008 basehttp 8300 1104 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2025-05-28 18:17:04,014 basehttp 8300 10260 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2025-05-28 18:17:04,018 basehttp 8300 1104 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2025-05-28 18:17:04,025 basehttp 8300 1104 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2025-05-28 18:17:04,026 basehttp 8300 10260 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2025-05-28 18:17:04,026 basehttp 8300 10260 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2025-05-28 18:17:04,026 basehttp 8300 1104 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2025-05-28 18:17:04,088 basehttp 8300 12392 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2025-05-28 18:17:04,097 basehttp 8300 12392 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+WARNING 2025-05-28 18:17:04,189 log 8300 12392 Not Found: /favicon.ico
+WARNING 2025-05-28 18:17:04,190 basehttp 8300 12392 "GET /favicon.ico HTTP/1.1" 404 3148
+INFO 2025-05-28 18:17:25,651 autoreload 8300 2340 C:\Users\Gael\Lalia\RFID_Admin\cartes\views.py changed, reloading.
+INFO 2025-05-28 18:17:27,165 autoreload 13448 11496 Watching for file changes with StatReloader
+INFO 2025-05-28 18:18:09,092 autoreload 13448 11496 C:\Users\Gael\Lalia\RFID_Admin\cartes\views.py changed, reloading.
+INFO 2025-05-28 18:18:11,173 autoreload 13920 18324 Watching for file changes with StatReloader
+INFO 2025-05-28 18:18:14,996 basehttp 13920 12812 "GET /api/cartes/cartes HTTP/1.1" 301 0
+WARNING 2025-05-28 18:18:15,116 log 13920 2532 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 18:18:15,118 basehttp 13920 2532 "GET /api/cartes/cartes/ HTTP/1.1" 401 10008
+WARNING 2025-05-28 18:18:27,407 log 13920 14292 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 18:18:27,411 log 13920 11572 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 18:18:27,413 basehttp 13920 11572 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 18:18:27,413 basehttp 13920 14292 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 18:18:28,432 log 13920 14292 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 18:18:28,433 basehttp 13920 14292 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 18:18:28,491 log 13920 14292 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 18:18:28,492 basehttp 13920 14292 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+WARNING 2025-05-28 18:18:30,460 log 13920 14292 Unauthorized: /api/identites/personnes/
+WARNING 2025-05-28 18:18:30,461 basehttp 13920 14292 "GET /api/identites/personnes/?page_size=100 HTTP/1.1" 401 58
+WARNING 2025-05-28 18:18:30,536 log 13920 14292 Unauthorized: /api/cartes/cartes/
+WARNING 2025-05-28 18:18:30,537 basehttp 13920 14292 "GET /api/cartes/cartes/?page=1&page_size=10 HTTP/1.1" 401 58
+>>>>>>> origin/Lalia
+INFO 2025-05-28 15:56:37,593 autoreload 1271338 136777037055808 Watching for file changes with StatReloader
