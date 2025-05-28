@@ -14,6 +14,7 @@ ENV/
 
 # === Django ===
 *.log
+django.log
 *.pot
 *.pyc
 db.sqlite3
@@ -39,7 +40,7 @@ htmlcov/
 # === System ===
 .DS_Store
 Thumbs.db
-
+*.log
 # === MyPy & Type hints ===
 .mypy_cache/
 .dmypy.json
