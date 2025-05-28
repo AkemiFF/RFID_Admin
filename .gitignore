@@ -24,10 +24,6 @@ local_settings.py
 .env
 .env.*
 
-# === Migrations compilées ===
-*/migrations/__pycache__/
-*/migrations/*.pyc
-
 # === Pytest ===
 .cache/
 .pytest_cache/
