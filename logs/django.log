@@ -276,3 +276,19 @@ INFO 2025-05-28 08:28:13,803 autoreload 624213 127776862000960 Watching for file
 >>>>>>> Stashed changes
 >>>>>>> origin/Lalia
 INFO 2025-05-28 16:01:20,496 autoreload 1282038 124082983434048 Watching for file changes with StatReloader
+INFO 2025-05-28 16:07:33,077 autoreload 1296471 123707335665472 Watching for file changes with StatReloader
+WARNING 2025-05-28 16:07:42,167 log 1296471 123707009791680 Method Not Allowed: /api/auth/login/
+WARNING 2025-05-28 16:07:42,168 basehttp 1296471 123707009791680 "GET /api/auth/login/ HTTP/1.1" 405 8299
+INFO 2025-05-28 16:07:42,644 basehttp 1296471 123707009791680 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-05-28 16:07:42,658 basehttp 1296471 123707009791680 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2025-05-28 16:07:42,719 basehttp 1296471 123706990909120 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2025-05-28 16:07:42,791 basehttp 1296471 123706990909120 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+INFO 2025-05-28 16:07:42,817 basehttp 1296471 123706990909120 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2025-05-28 16:07:42,825 basehttp 1296471 123706982516416 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2025-05-28 16:07:42,841 basehttp 1296471 123706982516416 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2025-05-28 16:07:43,008 basehttp 1296471 123707009791680 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2025-05-28 16:07:43,008 basehttp 1296471 123706999301824 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2025-05-28 16:07:43,010 basehttp 1296471 123706982516416 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2025-05-28 16:07:43,233 basehttp 1296471 123706982516416 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+WARNING 2025-05-28 16:07:43,811 log 1296471 123706982516416 Not Found: /favicon.ico
+WARNING 2025-05-28 16:07:43,811 basehttp 1296471 123706982516416 "GET /favicon.ico HTTP/1.1" 404 3633
