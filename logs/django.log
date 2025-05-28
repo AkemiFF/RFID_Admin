@@ -1,0 +1,42 @@
+INFO 2025-05-28 11:46:34,398 autoreload 4772 3420 Watching for file changes with StatReloader
+INFO 2025-05-28 12:24:24,043 autoreload 12116 10864 Watching for file changes with StatReloader
+INFO 2025-05-28 12:26:56,609 autoreload 12116 10864 C:\Users\Gael\Lalia\RFID_Admin\rfid_system\settings.py changed, reloading.
+INFO 2025-05-28 12:26:58,095 autoreload 3340 14444 Watching for file changes with StatReloader
+INFO 2025-05-28 12:27:16,391 autoreload 3340 14444 C:\Users\Gael\Lalia\RFID_Admin\rfid_system\settings.py changed, reloading.
+INFO 2025-05-28 12:27:17,650 autoreload 3428 15720 Watching for file changes with StatReloader
+INFO 2025-05-28 12:27:32,358 autoreload 8656 10300 Watching for file changes with StatReloader
+INFO 2025-05-28 12:30:15,673 autoreload 8656 10300 C:\Users\Gael\Lalia\RFID_Admin\rfid_system\settings.py changed, reloading.
+INFO 2025-05-28 12:30:16,843 autoreload 2104 4684 Watching for file changes with StatReloader
+INFO 2025-05-28 12:30:37,988 autoreload 2104 4684 C:\Users\Gael\Lalia\RFID_Admin\rfid_system\settings.py changed, reloading.
+INFO 2025-05-28 12:30:39,468 autoreload 13648 2340 Watching for file changes with StatReloader
+INFO 2025-05-28 12:30:45,080 autoreload 13648 2340 C:\Users\Gael\Lalia\RFID_Admin\rfid_system\settings.py changed, reloading.
+INFO 2025-05-28 12:30:47,268 autoreload 3164 16056 Watching for file changes with StatReloader
+INFO 2025-05-28 12:30:59,137 autoreload 2560 2384 Watching for file changes with StatReloader
+INFO 2025-05-28 12:32:08,967 autoreload 2560 2384 C:\Users\Gael\Lalia\RFID_Admin\rfid_system\settings.py changed, reloading.
+INFO 2025-05-28 12:32:10,167 autoreload 12040 9692 Watching for file changes with StatReloader
+INFO 2025-05-28 12:32:22,921 autoreload 14800 8608 Watching for file changes with StatReloader
+INFO 2025-05-28 12:34:32,975 autoreload 3100 16164 Watching for file changes with StatReloader
+INFO 2025-05-28 12:35:49,088 autoreload 7616 16256 Watching for file changes with StatReloader
+INFO 2025-05-28 12:37:25,289 autoreload 7616 16256 C:\Users\Gael\Lalia\RFID_Admin\transactions\models.py changed, reloading.
+INFO 2025-05-28 12:37:26,522 autoreload 14100 14096 Watching for file changes with StatReloader
+INFO 2025-05-28 12:38:22,743 autoreload 15404 11224 Watching for file changes with StatReloader
+INFO 2025-05-28 12:40:34,285 autoreload 3828 2352 Watching for file changes with StatReloader
+INFO 2025-05-28 12:43:16,409 autoreload 3828 2352 C:\Users\Gael\Lalia\RFID_Admin\documents\models.py changed, reloading.
+INFO 2025-05-28 12:43:18,060 autoreload 4840 6896 Watching for file changes with StatReloader
+INFO 2025-05-28 12:43:23,303 autoreload 4840 6896 C:\Users\Gael\Lalia\RFID_Admin\identites\models.py changed, reloading.
+INFO 2025-05-28 12:43:24,636 autoreload 14284 11852 Watching for file changes with StatReloader
+INFO 2025-05-28 12:43:31,101 autoreload 14284 11852 C:\Users\Gael\Lalia\RFID_Admin\logs\models.py changed, reloading.
+INFO 2025-05-28 12:43:32,584 autoreload 15172 8288 Watching for file changes with StatReloader
+INFO 2025-05-28 12:43:35,550 autoreload 15172 8288 C:\Users\Gael\Lalia\RFID_Admin\notifications\models.py changed, reloading.
+INFO 2025-05-28 12:43:36,817 autoreload 3836 8344 Watching for file changes with StatReloader
+INFO 2025-05-28 12:43:42,177 autoreload 3836 8344 C:\Users\Gael\Lalia\RFID_Admin\transactions\models.py changed, reloading.
+INFO 2025-05-28 12:43:43,352 autoreload 2636 2480 Watching for file changes with StatReloader
+INFO 2025-05-28 12:43:46,484 autoreload 2636 2480 C:\Users\Gael\Lalia\RFID_Admin\cartes\models.py changed, reloading.
+INFO 2025-05-28 12:43:47,726 autoreload 8864 8336 Watching for file changes with StatReloader
+INFO 2025-05-28 12:43:59,807 autoreload 9624 4964 Watching for file changes with StatReloader
+INFO 2025-05-28 12:44:19,265 autoreload 9624 4964 C:\Users\Gael\Lalia\RFID_Admin\authentication\models.py changed, reloading.
+INFO 2025-05-28 12:44:20,756 autoreload 6868 15276 Watching for file changes with StatReloader
+INFO 2025-05-28 12:44:40,955 autoreload 3840 4132 Watching for file changes with StatReloader
+INFO 2025-05-28 12:46:39,527 autoreload 3840 4132 C:\Users\Gael\Lalia\RFID_Admin\authentication\models.py changed, reloading.
+INFO 2025-05-28 12:46:40,803 autoreload 8464 2780 Watching for file changes with StatReloader
+INFO 2025-05-28 12:51:56,951 autoreload 4932 13404 Watching for file changes with StatReloader

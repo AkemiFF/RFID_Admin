@@ -1,6 +1,6 @@
 import uuid
 from django.db import models
-from django.contrib.postgres.fields import JSONField
+from django.db.models import JSONField
 from identites.models import Personne, Entreprise, Utilisateur
 
 # Ajouter ces imports en haut du fichier

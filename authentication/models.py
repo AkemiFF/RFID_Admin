@@ -1,7 +1,7 @@
 import uuid
 from django.db import models
 from django.contrib.auth.models import AbstractUser
-from django.contrib.postgres.fields import JSONField
+from django.db.models import JSONField
 from identites.models import Utilisateur
 
 
@@ -119,7 +119,8 @@ class Role(models.Model):
     is_system_role = models.BooleanField(default=False)  # Rôles système non modifiables
     is_active = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now_add=True)
-    created_by = models.ForeignKey(Utilisateur, on_delete=models.SET_NULL, null=True, blank=True)
+    created_by = models.ForeignKey(Utilisateur, on_delete=models.SET_NULL, null=True, blank=True, related_name='roles_crees')
+
 
     class Meta:
         db_table = 'auth_roles'
