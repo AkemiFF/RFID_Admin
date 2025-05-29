@@ -7,7 +7,7 @@ from .serializers import CarteRFIDSerializer, HistoriqueStatutsCarteSerializer
 class CarteRFIDViewSet(viewsets.ModelViewSet):
     queryset = CarteRFID.objects.all()
     serializer_class = CarteRFIDSerializer
-    # permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated]
 
 
 class HistoriqueStatutsCarteViewSet(viewsets.ModelViewSet):
