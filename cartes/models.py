@@ -16,6 +16,8 @@ class CarteRFID(models.Model):
         ('EXPIREE', 'Expirée'),
         ('PERDUE', 'Perdue'),
         ('VOLEE', 'Volée'),
+        ('INACTIVE', 'Inactive'),
+
     ]
     
     TYPE_CARTE_CHOICES = [
@@ -34,7 +36,7 @@ class CarteRFID(models.Model):
     plafond_quotidien = models.DecimalField(max_digits=15, decimal_places=2)
     plafond_mensuel = models.DecimalField(max_digits=15, decimal_places=2)
     solde_maximum = models.DecimalField(max_digits=15, decimal_places=2)
-    statut = models.CharField(max_length=20, choices=STATUT_CHOICES, default='ACTIVE')
+    statut = models.CharField(max_length=20, choices=STATUT_CHOICES, default='INACTIVE')
     motif_blocage = models.TextField(blank=True)
     date_emission = models.DateTimeField(auto_now_add=True)
     date_activation = models.DateTimeField(null=True, blank=True)
