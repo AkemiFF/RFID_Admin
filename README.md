@@ -5,6 +5,7 @@ Interface utilisateur moderne pour le système de gestion de cartes RFID, constr
 ## 🚀 Fonctionnalités
 
 ### 📊 Tableau de bord
+
 - Vue d'ensemble des statistiques en temps réel
 - Aperçu des cartes RFID et tickets actifs
 - Activité récente des transactions
@@ -12,6 +13,7 @@ Interface utilisateur moderne pour le système de gestion de cartes RFID, constr
 - Actions rapides
 
 ### 💳 Gestion des cartes
+
 - Liste complète des cartes RFID
 - Filtrage avancé (statut, type, recherche)
 - Création de nouvelles cartes
@@ -20,6 +22,7 @@ Interface utilisateur moderne pour le système de gestion de cartes RFID, constr
 - Pagination optimisée
 
 ### 🔄 Intégrations API
+
 - Services TypeScript pour tous les endpoints Django
 - Gestion d'état avec React Query
 - Authentification automatique
@@ -56,20 +59,22 @@ npm run dev
 
 4. **Ouvrir l'application**
 \`\`\`
-http://localhost:3000
+<http://localhost:3000>
 \`\`\`
 
 ## 🔧 Configuration
 
 ### Variables d'environnement
+
 \`\`\`env
-NEXT_PUBLIC_API_URL=http://localhost:8000/api
+NEXT_PUBLIC_API_URL=<http://localhost:8000/api>
 \`\`\`
 
 ### Structure des services API
 
 \`\`\`typescript
 // Services disponibles
+
 - cartesService: Gestion des cartes RFID
 - transactionsService: Gestion des transactions
 - identitesService: Gestion des personnes/entreprises
@@ -105,6 +110,7 @@ POST   /api/notifications/notifications/mark_as_read/  // Marquer comme lu
 ## 🎨 Design System
 
 ### Couleurs principales
+
 - **Purple**: Couleur primaire (#7c3aed)
 - **Blue**: Actions secondaires (#0ea5e9)
 - **Green**: Succès (#10b981)
@@ -112,6 +118,7 @@ POST   /api/notifications/notifications/mark_as_read/  // Marquer comme lu
 - **Yellow**: Avertissements (#f59e0b)
 
 ### Composants réutilisables
+
 - **Layout**: Structure de page avec sidebar et header
 - **Modal**: Modales accessibles avec animations
 - **StatusBadge**: Badges de statut colorés
@@ -119,6 +126,7 @@ POST   /api/notifications/notifications/mark_as_read/  // Marquer comme lu
 - **Header**: Barre de navigation supérieure
 
 ### Animations
+
 - **fade-in**: Apparition en fondu
 - **slide-up**: Glissement vers le haut
 - **card-hover**: Effet de survol des cartes
@@ -126,6 +134,7 @@ POST   /api/notifications/notifications/mark_as_read/  // Marquer comme lu
 ## 📱 Responsive Design
 
 L'interface est entièrement responsive avec des breakpoints optimisés :
+
 - **Mobile**: < 768px
 - **Tablet**: 768px - 1024px
 - **Desktop**: > 1024px
@@ -133,6 +142,7 @@ L'interface est entièrement responsive avec des breakpoints optimisés :
 ## 🔐 Authentification
 
 Le système gère automatiquement :
+
 - Stockage du token JWT
 - Ajout automatique aux headers
 - Redirection en cas d'expiration
@@ -141,14 +151,16 @@ Le système gère automatiquement :
 ## 🚀 Déploiement
 
 ### Build de production
+
 \`\`\`bash
 npm run build
 npm start
 \`\`\`
 
 ### Variables d'environnement de production
+
 \`\`\`env
-NEXT_PUBLIC_API_URL=https://your-api-domain.com/api
+NEXT_PUBLIC_API_URL=<https://your-api-domain.com/api>
 \`\`\`
 
 ## 🔄 Intégration avec le backend Django
@@ -163,6 +175,7 @@ Le frontend communique avec le backend Django via les services TypeScript qui en
 ## 📊 Gestion d'état
 
 React Query gère intelligemment :
+
 - **Cache** des données (5 min par défaut)
 - **Refetch** automatique
 - **Optimistic updates**
@@ -190,4 +203,3 @@ React Query gère intelligemment :
 ## 📄 Licence
 
 Ce projet est sous licence MIT.
-# RFID_Admin
