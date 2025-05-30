@@ -60,3 +60,5 @@ pip-delete-this-directory.txt
 
 # === Git ===
 .gitignore
+__pycache__
+*/__pycache__
