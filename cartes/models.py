@@ -1,12 +1,12 @@
 import uuid
+
 from django.db import models
 from django.db.models import JSONField
-from identites.models import Personne, Entreprise, Utilisateur
-
 # Ajouter ces imports en haut du fichier
 from django.db.models.signals import post_save, pre_save
 from django.dispatch import receiver
 from django.utils import timezone
+from identites.models import Entreprise, Personne, Utilisateur
 
 
 class CarteRFID(models.Model):
@@ -64,11 +64,11 @@ class HistoriqueStatutsCarte(models.Model):
     carte = models.ForeignKey(CarteRFID, on_delete=models.CASCADE)
     ancien_statut = models.CharField(max_length=20)
     nouveau_statut = models.CharField(max_length=20)
-    motif_changement = models.TextField()
+    motif_changement = models.TextField(null=True, blank=True)
     commentaire = models.TextField(blank=True)
     agent_modificateur = models.ForeignKey(Utilisateur, on_delete=models.SET_NULL, null=True)
-    adresse_ip = models.GenericIPAddressField()
-    user_agent = models.TextField()
+    adresse_ip = models.GenericIPAddressField(null=True, blank=True)
+    user_agent = models.TextField(null=True, blank=True)
     date_changement = models.DateTimeField(auto_now_add=True)
     donnees_supplementaires = JSONField(default=dict, blank=True)
 
