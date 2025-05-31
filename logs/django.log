@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 INFO 2025-05-28 11:46:34,398 autoreload 4772 3420 Watching for file changes with StatReloader
 INFO 2025-05-28 12:24:24,043 autoreload 12116 10864 Watching for file changes with StatReloader
 INFO 2025-05-28 12:26:56,609 autoreload 12116 10864 C:\Users\Gael\Lalia\RFID_Admin\rfid_system\settings.py changed, reloading.
@@ -40,3 +41,6 @@ INFO 2025-05-28 12:44:40,955 autoreload 3840 4132 Watching for file changes with
 INFO 2025-05-28 12:46:39,527 autoreload 3840 4132 C:\Users\Gael\Lalia\RFID_Admin\authentication\models.py changed, reloading.
 INFO 2025-05-28 12:46:40,803 autoreload 8464 2780 Watching for file changes with StatReloader
 INFO 2025-05-28 12:51:56,951 autoreload 4932 13404 Watching for file changes with StatReloader
+=======
+INFO 2025-05-28 08:28:13,803 autoreload 624213 127776862000960 Watching for file changes with StatReloader
+>>>>>>> Stashed changes
