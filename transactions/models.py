@@ -25,6 +25,7 @@ class Transaction(models.Model):
     type_transaction = models.CharField(max_length=20, choices=TYPE_TRANSACTION_CHOICES)
     montant = models.DecimalField(max_digits=15, decimal_places=2)
     solde_avant = models.DecimalField(max_digits=15, decimal_places=2)
+    carte_receipt = models.ForeignKey(CarteRFID, on_delete=models.CASCADE, related_name='transactions_client', null=True, blank=True)
     solde_apres = models.DecimalField(max_digits=15, decimal_places=2)
     merchant_id = models.CharField(max_length=100, blank=True)
     merchant_nom = models.CharField(max_length=255, blank=True)
