@@ -1,4 +1,6 @@
+from rest_framework import permissions
 from rest_framework.permissions import BasePermission
+
 from .models import UserRole
 
 
@@ -124,3 +126,17 @@ class RegionPermission(BasePermission):
             return obj.region == request.user.region_assignee
 
         return True  # Par défaut, autoriser si pas de restriction régionale
+
+
+class IsCardOwner(permissions.BasePermission):
+    """
+    Permission personnalisée pour vérifier si l'utilisateur est le propriétaire de la carte
+    """
+    
+    def has_object_permission(self, request, view, obj):
+        # Vérifier si l'utilisateur est le propriétaire de la carte
+        if hasattr(obj, 'personne') and obj.personne:
+            return obj.personne.utilisateur == request.user
+        elif hasattr(obj, 'entreprise') and obj.entreprise:
+            return obj.entreprise.utilisateur == request.user
+        return False
