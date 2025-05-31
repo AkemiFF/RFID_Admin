@@ -16,6 +16,8 @@ class CarteRFID(models.Model):
         ('EXPIREE', 'Expirée'),
         ('PERDUE', 'Perdue'),
         ('VOLEE', 'Volée'),
+        ('INACTIVE', 'Inactive'),
+
     ]
     
     TYPE_CARTE_CHOICES = [
@@ -26,15 +28,15 @@ class CarteRFID(models.Model):
 
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     code_uid = models.CharField(max_length=100, unique=True)
-    personne = models.ForeignKey(Personne, on_delete=models.CASCADE, null=True, blank=True)
-    entreprise = models.ForeignKey(Entreprise, on_delete=models.CASCADE, null=True, blank=True)
+    personne = models.ForeignKey(Personne, on_delete=models.CASCADE, null=True, blank=True, related_name='cartes_rfid')
+    entreprise = models.ForeignKey(Entreprise, on_delete=models.CASCADE, null=True, blank=True,related_name='cartes_rfid')
     numero_serie = models.CharField(max_length=50, unique=True)
     type_carte = models.CharField(max_length=20, choices=TYPE_CARTE_CHOICES)
     solde = models.DecimalField(max_digits=15, decimal_places=2, default=0)
     plafond_quotidien = models.DecimalField(max_digits=15, decimal_places=2)
     plafond_mensuel = models.DecimalField(max_digits=15, decimal_places=2)
     solde_maximum = models.DecimalField(max_digits=15, decimal_places=2)
-    statut = models.CharField(max_length=20, choices=STATUT_CHOICES, default='ACTIVE')
+    statut = models.CharField(max_length=20, choices=STATUT_CHOICES, default='INACTIVE')
     motif_blocage = models.TextField(blank=True)
     date_emission = models.DateTimeField(auto_now_add=True)
     date_activation = models.DateTimeField(null=True, blank=True)
@@ -65,7 +67,7 @@ class HistoriqueStatutsCarte(models.Model):
     motif_changement = models.TextField()
     commentaire = models.TextField(blank=True)
     agent_modificateur = models.ForeignKey(Utilisateur, on_delete=models.SET_NULL, null=True)
-    adresse_ip = models.GenericIPAddressField()
+    adresse_ip = models.GenericIPAddressField(null=True, blank=True)
     user_agent = models.TextField()
     date_changement = models.DateTimeField(auto_now_add=True)
     donnees_supplementaires = JSONField(default=dict, blank=True)

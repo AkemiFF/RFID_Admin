@@ -1,73 +1,72 @@
-from rest_framework import status, generics, viewsets
-from rest_framework.decorators import { api }_view, permission_classes, action
-from rest_framework.permissions import IsAuthenticated, AllowAny
-from rest_framework.response import Response
-from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
-from rest_framework_simplejwt.tokens import RefreshToken
-from django.contrib.auth import logout
-from django.utils import timezone
-from django.db.models import Q
-from .serializers import (
-    CustomTokenObtainPairSerializer, UserSerializer, ChangePasswordSerializer,
-    PermissionSerializer, RoleSerializer, UserRoleSerializer
-)
-from .models import Permission, Role, UserRole, LoginAttempt
-from .permissions import HasPermission
-from identites.models import Utilisateur
 import logging
+
+from django.contrib.auth import logout
+from django.db.models import Q
+from django.utils import timezone
+from identites.models import Utilisateur
+from rest_framework import generics, status, viewsets
+from rest_framework.decorators import action, api_view, permission_classes
+from rest_framework.permissions import AllowAny, IsAuthenticated
+from rest_framework.response import Response
+from rest_framework_simplejwt.tokens import RefreshToken
+from rest_framework_simplejwt.views import (TokenObtainPairView,
+                                            TokenRefreshView)
+
+from .models import LoginAttempt, Permission, Role, UserRole
+from .permissions import HasPermission
+from .serializers import (ChangePasswordSerializer,
+                          CustomTokenObtainPairSerializer,
+                          PermissionSerializer, RoleSerializer,
+                          UserRoleSerializer, UserSerializer)
 
 logger = logging.getLogger('authentication')
 
 
 class CustomTokenObtainPairView(TokenObtainPairView):
-    """Vue personnalisée pour l'authentification JWT"""
+    """Vue personnalisée pour l'authentification JWT via email + logging"""
+
     serializer_class = CustomTokenObtainPairSerializer
 
     def post(self, request, *args, **kwargs):
-        # Enregistrer la tentative de connexion
         ip_address = self.get_client_ip(request)
         user_agent = request.META.get('HTTP_USER_AGENT', '')
-        username = request.data.get('username', '')
+        email = request.data.get('email', '')
 
         try:
             response = super().post(request, *args, **kwargs)
-            
-            # Connexion réussie
+
             if response.status_code == 200:
+                # Connexion réussie, on récupère par email
                 try:
-                    user = Utilisateur.objects.get(username=username)
+                    user = Utilisateur.objects.get(email=email)
                     LoginAttempt.objects.create(
-                        username=username,
+                        username=email,
                         user=user,
                         attempt_type='SUCCESS',
                         ip_address=ip_address,
                         user_agent=user_agent
                     )
-                    logger.info(f"Connexion réussie pour {username} depuis {ip_address}")
+                    logger.info(f"Connexion réussie pour {email} depuis {ip_address}")
                 except Utilisateur.DoesNotExist:
                     pass
-            
+
             return response
-            
+
         except Exception as e:
             # Connexion échouée
             LoginAttempt.objects.create(
-                username=username,
+                username=email,
                 attempt_type='FAILED_PASSWORD',
                 ip_address=ip_address,
                 user_agent=user_agent,
                 additional_info={'error': str(e)}
             )
-            logger.warning(f"Tentative de connexion échouée pour {username} depuis {ip_address}")
+            logger.warning(f"Tentative de connexion échouée pour {email} depuis {ip_address}")
             raise
 
     def get_client_ip(self, request):
         x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
-        if x_forwarded_for:
-            ip = x_forwarded_for.split(',')[0]
-        else:
-            ip = request.META.get('REMOTE_ADDR')
-        return ip
+        return x_forwarded_for.split(',')[0] if x_forwarded_for else request.META.get('REMOTE_ADDR')
 
 
 class LogoutView(generics.GenericAPIView):
