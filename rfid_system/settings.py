@@ -74,19 +74,12 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'rfid_system.wsgi.application'
-
-# Database
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'rfid_system_db',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
     {
