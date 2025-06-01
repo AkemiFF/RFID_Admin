@@ -11,7 +11,7 @@ from .tasks import process_transaction, process_rechargement
 class TransactionViewSet(viewsets.ModelViewSet):
     queryset = Transaction.objects.all()
     serializer_class = TransactionSerializer
-    permission_classes = [IsAuthenticated]
+    
     
     def create(self, request, *args, **kwargs):
         """Crée une transaction et la traite de manière asynchrone"""
