@@ -28,8 +28,8 @@ class CarteRFID(models.Model):
 
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     code_uid = models.CharField(max_length=100, unique=True)
-    personne = models.ForeignKey(Personne, on_delete=models.CASCADE, null=True, blank=True)
-    entreprise = models.ForeignKey(Entreprise, on_delete=models.CASCADE, null=True, blank=True)
+    personne = models.ForeignKey(Personne, on_delete=models.CASCADE, null=True, blank=True, related_name='cartes_rfid')
+    entreprise = models.ForeignKey(Entreprise, on_delete=models.CASCADE, null=True, blank=True,related_name='cartes_rfid')
     numero_serie = models.CharField(max_length=50, unique=True)
     type_carte = models.CharField(max_length=20, choices=TYPE_CARTE_CHOICES)
     solde = models.DecimalField(max_digits=15, decimal_places=2, default=0)
