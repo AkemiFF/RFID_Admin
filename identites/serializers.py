@@ -38,8 +38,7 @@ class PersonneSerializer(serializers.ModelSerializer):
         return obj.cartes_rfid.count()
 
     def validate(self, data):
-        # Validation des champs obligatoires
-        required_fields = ['nom', 'prenom', 'date_naissance', 'lieu_naissance', 
+        required_fields = ['nom', 'prenom', 'date_naissance', 
                          'nationalite', 'type_piece', 'numero_piece']
         for field in required_fields:
             if field not in data or not data[field]:
@@ -112,7 +111,6 @@ class EntrepriseSerializer(serializers.ModelSerializer):
             'stat': {'required': True},
             'nif': {'required': True},
             'adresse_siege': {'required': True},
-            'date_creation_entreprise': {'required': True},
             'secteur_activite': {'required': True}
         }
 
@@ -140,7 +138,7 @@ class EntrepriseSerializer(serializers.ModelSerializer):
         
         # Validation des champs obligatoires
         required_fields = ['raison_sociale', 'forme_juridique', 'stat', 'nif',
-                         'adresse_siege', 'date_creation_entreprise', 'secteur_activite']
+                         'adresse_siege']
         for field in required_fields:
             if field not in validated_data or not validated_data[field]:
                 raise serializers.ValidationError({field: "Ce champ est obligatoire"})
@@ -161,7 +159,6 @@ class EntrepriseSerializer(serializers.ModelSerializer):
                     carte.date_activation = timezone.now()
                     with transaction.atomic():
                             carte.save()
-                            # Créer l'entrée d'historique avec une IP par défaut
                             from cartes.models import HistoriqueStatutsCarte
                             HistoriqueStatutsCarte.objects.create(
                                 carte=carte,
