@@ -20,7 +20,7 @@ from .tasks import process_rechargement, process_transaction
 class TransactionViewSet(viewsets.ModelViewSet):
     queryset = Transaction.objects.all()
     serializer_class = TransactionSerializer
-    permission_classes = [IsAuthenticated]
+    
     
     def get_queryset(self):
         """Filtre les transactions selon l'utilisateur connecté"""

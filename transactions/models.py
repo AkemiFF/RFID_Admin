@@ -35,7 +35,7 @@ class Transaction(models.Model):
     description = models.TextField(blank=True)
     categorie = models.CharField(max_length=100, blank=True)
     localisation = models.CharField(max_length=255, blank=True, null=True)
-    coordonnees_gps = models.CharField(null=True, blank=True)
+    coordonnees_gps = models.CharField(max_length=255,null=True, blank=True)
     statut = models.CharField(max_length=20, choices=STATUT_CHOICES, default='EN_COURS')
     code_erreur = models.CharField(max_length=50, blank=True, null=True)
     message_erreur = models.TextField(blank=True, null=True)
@@ -90,7 +90,7 @@ class Rechargement(models.Model):
     date_rechargement = models.DateTimeField(auto_now_add=True)
     date_confirmation = models.DateTimeField(null=True, blank=True)
     recu_numero = models.CharField(max_length=100, unique=True)
-    donnees_paiement = JSONField(default=dict, blank=True)
+    donnees_paiement = JSONField(null=True,default=dict, blank=True)
 
     class Meta:
         db_table = 'rechargements'
