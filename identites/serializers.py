@@ -8,9 +8,15 @@ from rest_framework.response import Response
 from django.utils import timezone
 import logging
 from django.db import transaction
-
+from django.contrib.auth.hashers import make_password
 
 logger = logging.getLogger(__name__)
+
+class UtilisateurSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Utilisateur
+        fields = '__all__'
+        extra_kwargs = {'password': {'write_only': True}}
 
 class PersonneSerializer(serializers.ModelSerializer):
     from cartes.serializers import CarteRFIDSerializer
@@ -20,8 +26,15 @@ class PersonneSerializer(serializers.ModelSerializer):
         required=False,
         allow_empty=True
     )
+    # Ajouter le champ user_data pour recevoir les données utilisateur
+    user_data = serializers.DictField(
+        write_only=True,
+        required=False,
+        allow_empty=True
+    )
     cartes_rfid_details = CarteRFIDSerializer(source='cartes_rfid', many=True, read_only=True)
     nombre_cartes = serializers.SerializerMethodField(read_only=True)
+    utilisateur_info = UtilisateurSerializer(source='utilisateur_set.first', read_only=True)
     
     class Meta:
         model = Personne
@@ -46,12 +59,51 @@ class PersonneSerializer(serializers.ModelSerializer):
         
         return data
 
+    @transaction.atomic
     def create(self, validated_data):
         carte_ids_data = validated_data.pop('carte_ids', [])
+        user_data = validated_data.pop('user_data', None)
         
         try:
+            # Créer la personne
             personne = Personne.objects.create(**validated_data)
+            logger.info(f"Personne créée: {personne.id}")
             
+            # Créer l'utilisateur si les données sont fournies
+            if user_data:
+                try:
+                    
+                    username = user_data.get('username')
+                    password = user_data.get('password')
+                    role = user_data.get('role', 'CLIENT')
+                    
+                    if not username or not password:
+                        logger.error("Nom d'utilisateur ou mot de passe manquant")
+                        raise serializers.ValidationError("Le nom d'utilisateur et le mot de passe sont requis")
+                    
+                    
+                    if Utilisateur.objects.filter(username=username).exists():
+                        logger.error(f"Le nom d'utilisateur '{username}' existe déjà")
+                        raise serializers.ValidationError(f"Le nom d'utilisateur '{username}' existe déjà.")
+                    
+                    
+                    utilisateur = Utilisateur.objects.create(
+                        username=username,
+                        email=personne.email or '',
+                        password=make_password(password),
+                        role=role,
+                        personne=personne,
+                        actif=True
+                    )
+                    logger.info(f"Utilisateur créé avec succès: {utilisateur.id} pour la personne {personne.id}")
+                    
+                except Exception as e:
+                    logger.error(f"Erreur lors de la création de l'utilisateur: {str(e)}")
+                    
+                    personne.delete()
+                    raise serializers.ValidationError(f"Erreur lors de la création de l'utilisateur: {str(e)}")
+            
+            # Assigner les cartes si spécifiées
             if carte_ids_data:
                 for carte_id in carte_ids_data:
                     try:
@@ -64,29 +116,28 @@ class PersonneSerializer(serializers.ModelSerializer):
                         carte.personne = personne
                         carte.statut = 'ACTIVE'
                         carte.date_activation = timezone.now()
+                        carte.save()
                         
-                        # Sauvegarder avec l'adresse IP (peut être une IP par défaut)
-                        with transaction.atomic():
-                            carte.save()
-                            # Créer l'entrée d'historique avec une IP par défaut
-                            from cartes.models import HistoriqueStatutsCarte
-                            HistoriqueStatutsCarte.objects.create(
-                                 carte=carte,
-                                ancien_statut='INACTIVE',
-                                nouveau_statut='ACTIVE',
-                                motif_changement="Assignation automatique",  # Champ correct
-                                commentaire="",  # Champ obligatoire
-                                agent_modificateur=self.context['request'].user if self.context.get('request') else None,  # Champ correct
-                                adresse_ip="127.0.0.1",  # IP par défaut
-                                user_agent=""
-                            )
-                            
+                        # Créer l'entrée d'historique
+                        from cartes.models import HistoriqueStatutsCarte
+                        HistoriqueStatutsCarte.objects.create(
+                            carte=carte,
+                            ancien_statut='INACTIVE',
+                            nouveau_statut='ACTIVE',
+                            motif_changement="Assignation automatique",
+                            commentaire="",
+                            agent_modificateur=self.context.get('request').user if self.context.get('request') else None,
+                            adresse_ip="127.0.0.1",
+                            user_agent=""
+                        )
+                        
                         logger.info(f"Carte {carte.id} assignée à la personne {personne.id}")
                     except CarteRFID.DoesNotExist:
                         logger.warning(f"Carte RFID {carte_id} non trouvée ou non disponible")
                         continue
             
             return personne
+            
         except Exception as e:
             logger.error(f"Erreur lors de la création de la personne: {str(e)}")
             raise serializers.ValidationError(f"Erreur lors de la création: {str(e)}")
@@ -99,8 +150,15 @@ class EntrepriseSerializer(serializers.ModelSerializer):
         required=False,
         allow_empty=True
     )
+    # Ajouter le champ user_data pour recevoir les données utilisateur
+    user_data = serializers.DictField(
+        write_only=True,
+        required=False,
+        allow_empty=True
+    )
     cartes_rfid_details = CarteRFIDSerializer(source='cartes_rfid', many=True, read_only=True)
     nombre_cartes = serializers.SerializerMethodField(read_only=True)
+    utilisateur_info = UtilisateurSerializer(source='utilisateur_set.first', read_only=True)
     
     class Meta:
         model = Entreprise
@@ -133,54 +191,90 @@ class EntrepriseSerializer(serializers.ModelSerializer):
                     )
         return value
 
+    @transaction.atomic
     def create(self, validated_data):
         carte_ids_data = validated_data.pop('carte_ids', [])
+        user_data = validated_data.pop('user_data', None)
         
         # Validation des champs obligatoires
-        required_fields = ['raison_sociale', 'forme_juridique', 'stat', 'nif',
-                         'adresse_siege']
+        required_fields = ['raison_sociale', 'forme_juridique', 'stat', 'nif', 'adresse_siege']
         for field in required_fields:
             if field not in validated_data or not validated_data[field]:
                 raise serializers.ValidationError({field: "Ce champ est obligatoire"})
         
-        entreprise = Entreprise.objects.create(**validated_data)
-        
-        if carte_ids_data:
-            for carte_id in carte_ids_data:
+        try:
+           
+            entreprise = Entreprise.objects.create(**validated_data)
+            logger.info(f"Entreprise créée: {entreprise.id}")
+            
+            
+            if user_data:
                 try:
-                    carte = CarteRFID.objects.get(
-                        id=carte_id,
-                        personne__isnull=True,
-                        entreprise__isnull=True,
-                        statut='INACTIVE'
+                    # Validation des données utilisateur
+                    username = user_data.get('username')
+                    password = user_data.get('password')
+                    role = user_data.get('role', 'CLIENT')
+                    
+                    if not username or not password:
+                        logger.error("Nom d'utilisateur ou mot de passe manquant")
+                        raise serializers.ValidationError("Le nom d'utilisateur et le mot de passe sont requis")
+                    
+                    # Vérifier que le nom d'utilisateur n'existe pas déjà
+                    if Utilisateur.objects.filter(username=username).exists():
+                        logger.error(f"Le nom d'utilisateur '{username}' existe déjà")
+                        raise serializers.ValidationError(f"Le nom d'utilisateur '{username}' existe déjà.")
+                    
+                    # Créer l'utilisateur
+                    utilisateur = Utilisateur.objects.create(
+                        username=username,
+                        email=entreprise.email or '',
+                        password=make_password(password),
+                        role=role,
+                        entreprise=entreprise,
+                        actif=True
                     )
-                    carte.entreprise = entreprise
-                    carte.statut = 'ACTIVE'
-                    carte.date_activation = timezone.now()
-                    with transaction.atomic():
-                            carte.save()
-                            from cartes.models import HistoriqueStatutsCarte
-                            HistoriqueStatutsCarte.objects.create(
-                                carte=carte,
-                                ancien_statut='INACTIVE',
-                                nouveau_statut='ACTIVE',
-                                motif_changement="Assignation automatique",
-                                commentaire="", 
-                                agent_modificateur=self.context['request'].user if self.context.get('request') else None,  # Champ correct
-                                adresse_ip="127.0.0.1", 
-                                user_agent=""
-                            )
-
-
-                    logger.info(f"Carte {carte.id} assignée à l'entreprise {entreprise.id}")
-                except CarteRFID.DoesNotExist:
-                    logger.warning(f"Carte RFID {carte_id} non trouvée ou non disponible")
-                    continue
-        
-        return entreprise
-
-class UtilisateurSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Utilisateur
-        fields = '__all__'
-        extra_kwargs = {'password': {'write_only': True}}
+                    logger.info(f"Utilisateur créé avec succès: {utilisateur.id} pour l'entreprise {entreprise.id}")
+                    
+                except Exception as e:
+                    logger.error(f"Erreur lors de la création de l'utilisateur: {str(e)}")
+                    entreprise.delete()
+                    raise serializers.ValidationError(f"Erreur lors de la création de l'utilisateur: {str(e)}")
+            
+            # Assigner les cartes si spécifiées
+            if carte_ids_data:
+                for carte_id in carte_ids_data:
+                    try:
+                        carte = CarteRFID.objects.get(
+                            id=carte_id,
+                            personne__isnull=True,
+                            entreprise__isnull=True,
+                            statut='INACTIVE'
+                        )
+                        carte.entreprise = entreprise
+                        carte.statut = 'ACTIVE'
+                        carte.date_activation = timezone.now()
+                        carte.save()
+                        
+             
+                        from cartes.models import HistoriqueStatutsCarte
+                        HistoriqueStatutsCarte.objects.create(
+                            carte=carte,
+                            ancien_statut='INACTIVE',
+                            nouveau_statut='ACTIVE',
+                            motif_changement="Assignation automatique",
+                            commentaire="",
+                            agent_modificateur=self.context.get('request').user if self.context.get('request') else None,
+                            adresse_ip="127.0.0.1",
+                            user_agent=""
+                        )
+                        
+                        logger.info(f"Carte {carte.id} assignée à l'entreprise {entreprise.id}")
+                    except CarteRFID.DoesNotExist:
+                        logger.warning(f"Carte RFID {carte_id} non trouvée ou non disponible")
+                        continue
+            
+            return entreprise
+            
+        except Exception as e:
+            logger.error(f"Erreur lors de la création de l'entreprise: {str(e)}")
+            raise serializers.ValidationError(f"Erreur lors de la création: {str(e)}")
