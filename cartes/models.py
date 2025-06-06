@@ -81,16 +81,13 @@ class HistoriqueStatutsCarte(models.Model):
         return f"Changement {self.ancien_statut} -> {self.nouveau_statut}"
 
 
-# Ajouter à la fin du fichier, après les classes existantes
-
 @receiver(pre_save, sender=CarteRFID)
 def carte_status_change_handler(sender, instance, **kwargs):
     """Gère les changements de statut des cartes"""
-    if instance.pk:  # Si la carte existe déjà
+    if instance.pk: 
         try:
             old_instance = CarteRFID.objects.get(pk=instance.pk)
             if old_instance.statut != instance.statut:
-                # Créer un historique de changement de statut
                 HistoriqueStatutsCarte.objects.create(
                     carte=instance,
                     ancien_statut=old_instance.statut,
