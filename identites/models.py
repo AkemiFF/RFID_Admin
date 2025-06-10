@@ -84,6 +84,7 @@ class Utilisateur(AbstractUser):
         ('OPERATEUR', 'Opérateur'),
         ('AGENT', 'Agent'),
         ('SUPERVISEUR', 'Superviseur'),
+        ('Client', 'Client'),
     ]
 
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
